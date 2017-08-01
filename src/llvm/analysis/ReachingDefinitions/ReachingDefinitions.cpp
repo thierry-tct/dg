@@ -408,6 +408,7 @@ static bool isRelevantCall(const llvm::Instruction *Inst)
 
         if (func->isIntrinsic()) {
             switch (func->getIntrinsicID()) {
+                case Intrinsic::vacopy:
                 case Intrinsic::memmove:
                 case Intrinsic::memcpy:
                 case Intrinsic::memset:
@@ -693,6 +694,7 @@ RDNode *LLVMRDBuilder::createIntrinsicCall(const llvm::CallInst *CInst)
 
     switch (I->getIntrinsicID())
     {
+        case Intrinsic::vacopy:
         case Intrinsic::memmove:
         case Intrinsic::memcpy:
         case Intrinsic::memset:
