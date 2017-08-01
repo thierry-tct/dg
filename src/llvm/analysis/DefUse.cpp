@@ -113,6 +113,7 @@ void LLVMDefUseAnalysis::handleIntrinsicCall(LLVMNode *callNode,
 
     switch (I->getIntrinsicID())
     {
+        case Intrinsic::vacopy:
         case Intrinsic::memmove:
         case Intrinsic::memcpy:
             dest = I->getOperand(0);
@@ -124,6 +125,34 @@ void LLVMDefUseAnalysis::handleIntrinsicCall(LLVMNode *callNode,
         case Intrinsic::vastart:
             dest = I->getOperand(0);
             break;
+        case Intrinsic::sqrt:
+        case Intrinsic::powi:
+        case Intrinsic::sin:
+        case Intrinsic::cos:
+        case Intrinsic::pow:
+        case Intrinsic::exp:
+        case Intrinsic::exp2:
+        case Intrinsic::log:
+        case Intrinsic::log10:
+        case Intrinsic::log2:
+        case Intrinsic::fma:
+        case Intrinsic::fabs:
+        case Intrinsic::minnum:
+        case Intrinsic::maxnum:
+        case Intrinsic::copysign:
+        case Intrinsic::floor:
+        case Intrinsic::ceil:
+        case Intrinsic::trunc:
+        case Intrinsic::rint:
+        case Intrinsic::nearbyint:
+        case Intrinsic::round:
+#if (((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR >= 8)) || \
+                                            (LLVM_VERSION_MAJOR >= 4))
+        case Intrinsic::bitreverse:
+#endif
+        case Intrinsic::ctpop:
+        case Intrinsic::ctlz:
+        case Intrinsic::cttz:
         case Intrinsic::vaend:
         case Intrinsic::lifetime_start:
         case Intrinsic::lifetime_end:
