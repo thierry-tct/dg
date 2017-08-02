@@ -89,7 +89,11 @@ private:
     void addNode(const llvm::Value *val, RDNode *node)
     {
         auto it = nodes_map.find(val);
-        assert(it == nodes_map.end() && "Adding a node that we already have");
+        // Comment the assert bellow because it is possible that a call with
+        // function pointer have first point to a function defined and then
+        // later on point to a function only declared, then the same call
+        // will be added twice
+        //assert(it == nodes_map.end() && "Adding a node that we already have");
 
         nodes_map.emplace_hint(it, val, node);
         node->setUserData(const_cast<llvm::Value *>(val));
