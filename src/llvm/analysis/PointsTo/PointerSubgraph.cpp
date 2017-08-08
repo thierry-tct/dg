@@ -780,7 +780,7 @@ LLVMPointerSubgraphBuilder::createIntrinsic(const llvm::Instruction *Inst)
     PSNode *n;
 
     const IntrinsicInst *I = cast<IntrinsicInst>(Inst);
-    if (isa<MemTransferInst>(I)) {
+    if (isa<MemTransferInst>(I) || isa<VACopyInst>(I)) {
         n = createMemTransfer(I);
         return std::make_pair(n, n);
     } else if (isa<MemSetInst>(I)) {
