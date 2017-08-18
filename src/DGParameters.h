@@ -70,7 +70,7 @@ public:
             delete par.second.out;
         }
 
-#if ENABLE_CFG
+#ifdef ENABLE_CFG
         // delete auxiliary basic blocks
         delete BBIn;
         delete BBOut;
