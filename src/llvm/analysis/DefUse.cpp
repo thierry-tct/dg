@@ -137,8 +137,10 @@ void LLVMDefUseAnalysis::handleIntrinsicCall(LLVMNode *callNode,
         case Intrinsic::log2:
         case Intrinsic::fma:
         case Intrinsic::fabs:
+#if (LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR >= 6)
         case Intrinsic::minnum:
         case Intrinsic::maxnum:
+#endif
         case Intrinsic::copysign:
         case Intrinsic::floor:
         case Intrinsic::ceil:
