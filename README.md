@@ -44,7 +44,7 @@ all these variables. When LLVM is installed on your system in standard paths,
 the configuration should look just like:
 
 ```
-cmake .
+cmake ..
 ```
 
 If there is any collision (i.e. there are more versions of LLVM installed),
