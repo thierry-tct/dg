@@ -27,7 +27,12 @@
 #include <llvm/IR/Constant.h>
 #include <llvm/Support/raw_os_ostream.h>
 
-#include <llvm/IR/Dominators.h>
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+ #include <llvm/Analysis/Dominators.h>
+#else
+ #include <llvm/IR/Dominators.h>
+#endif
+
 
 #if (__clang__)
 #pragma clang diagnostic pop // ignore -Wunused-parameter
@@ -57,8 +62,13 @@ llvm::raw_ostream& operator<<(llvm::raw_ostream& os, const ValInfo& vi) {
         os << I->getParent()->getParent()->getName()
                << ":: " << *I;
     } else if (auto A = dyn_cast<Argument>(vi.v)) {
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5) )	    
+        os << A->getParent()->getParent()->getModuleIdentifier()
+               << ":: (arg) " << *A;
+#else
         os << A->getParent()->getParent()->getName()
                << ":: (arg) " << *A;
+#endif	       
     } else if (auto F = dyn_cast<Function>(vi.v)) {
         os << "(func) " << F->getName();
     } else {
@@ -620,10 +630,14 @@ getBasicBlocksInDominatorOrder(llvm::Function& F)
     std::vector<const llvm::BasicBlock *> blocks;
     blocks.reserve(F.size());
 
-#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 9))
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 5))
+        llvm::DominatorTree DTree;
+        DTree.getBase().recalculate(F);
+#elif ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 9))
         llvm::DominatorTree DTree;
         DTree.recalculate(F);
 #else
+
         llvm::DominatorTreeWrapperPass wrapper;
         wrapper.runOnFunction(F);
         auto& DTree = wrapper.getDomTree();

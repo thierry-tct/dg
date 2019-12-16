@@ -4,7 +4,12 @@
 #include <llvm/IR/Value.h>
 #include <llvm/IR/Instructions.h>
 #include <llvm/IR/Module.h>
-#include <llvm/IR/CFG.h>
+
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 5))
+        #include  <llvm/Support/CFG.h>
+#elif ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 9))
+        #include  <llvm/IR/CFG.h>
+#endif
 
 #include "dg/analysis/ValueRelations/ValueRelations.h"
 
@@ -74,7 +79,11 @@ class LLVMValueRelations {
     }
 
     void buildSwitch(const llvm::SwitchInst *swtch, VRBBlock *block) {
+#if ( LLVM_VERSION_MAJOR <=3 ) && ( LLVM_VERSION_MAJOR < 5 )
+        for(auto it = swtch->case_begin(), caseE = swtch -> case_end(); it != caseE ; ++it){
+#else	    
         for (auto& it : swtch->cases()) {
+#endif		
             auto succ = getBBlock(it.getCaseSuccessor());
             assert(succ);
             auto op = std::unique_ptr<VROp>(new VRAssume(
@@ -91,7 +100,11 @@ class LLVMValueRelations {
         assert(succ);
         auto assume = new VRAssume();
 
+#if ( LLVM_VERSION_MAJOR <=3 ) && ( LLVM_VERSION_MAJOR < 5 )
+        for(auto it = swtch->case_begin(), caseE = swtch -> case_end(); it != caseE ; ++it){
+#else
         for (auto& it : swtch->cases()) {
+#endif	
             assume->addRelation(VRRelation::Neq(swtch->getCondition(),
                                                 it.getCaseValue()));
         }
@@ -227,7 +240,12 @@ class LLVMValueRelations {
 
                 // bind arguments
                 unsigned n = 0;
-                for (auto& arg : F.args()) {
+#if ( LLVM_VERSION_MAJOR <=3 ) && ( LLVM_VERSION_MAJOR < 5 )
+                for(auto argIt = F.arg_begin(), argE = F.arg_end(); argIt != argE ; ++argIt){
+		    auto &arg = *argIt;
+#else
+		for (auto& arg : F.args()) {
+#endif			
                     if (n >= CI->getNumArgOperands())
                         break;
                     auto op = CI->getArgOperand(n);

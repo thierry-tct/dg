@@ -17,7 +17,13 @@
 #include <llvm/IR/IntrinsicInst.h>
 #include <llvm/IR/Constants.h>
 #include <llvm/IR/Module.h>
-#include <llvm/IR/CFG.h>
+
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 5))
+    #include  <llvm/Support/CFG.h>
+    #include <llvm/IR/DataLayout.h>
+#elif ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 9))
+    #include  <llvm/IR/CFG.h>
+#endif
 
 #if (__clang__)
 #pragma clang diagnostic pop // ignore -Wunused-parameter
@@ -403,7 +409,10 @@ class LLVMValueRelationsAnalysis {
                         RelationsMap& Rel,
                         ReadsMap& R, VRLocation *source) {
         using namespace llvm;
-        switch(I->getOpcode()) {
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+        DataLayout dl(_M);
+#endif
+	switch(I->getOpcode()) {
             case Instruction::Store:
                 return R.add(I->getOperand(1)->stripPointerCasts(), I->getOperand(0));
             case Instruction::Load:
@@ -421,7 +430,11 @@ class LLVMValueRelationsAnalysis {
                 return mulGen(I, E, Rel);
             default:
                 if (auto C = dyn_cast<CastInst>(I)) {
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+                    if (C->isLosslessCast() || C->isNoopCast(dl.getIntPtrType( C->getContext()))) {
+#else
                     if (C->isLosslessCast() || C->isNoopCast(_M->getDataLayout())) {
+#endif
                         return E.add(C, C->getOperand(0));
                     }
                 }

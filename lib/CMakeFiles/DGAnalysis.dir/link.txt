@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fno-rtti -std=c++11 -Wall -Wextra  -shared -Wl,-soname,libDGAnalysis.so -o libDGAnalysis.so CMakeFiles/DGAnalysis.dir/analysis/Offset.cpp.o  -L/usr/local/lib 

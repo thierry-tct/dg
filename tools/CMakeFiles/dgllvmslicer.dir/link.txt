@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fno-rtti -std=c++11 -Wall -Wextra  -shared -Wl,-soname,libdgllvmslicer.so -o libdgllvmslicer.so CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.o CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.o  -L/usr/local/lib 

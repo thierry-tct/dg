@@ -139,11 +139,20 @@ Pointer LLVMPointerGraphBuilder::handleConstantGep(const llvm::GetElementPtrInst
            && "Constant node has more that 1 pointer");
     pointer = *(opNode->pointsTo.begin());
 
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+    DataLayout dl(M);
+    unsigned bitwidth = getPointerBitwidth(&dl, op);
+#else
     unsigned bitwidth = getPointerBitwidth(&M->getDataLayout(), op);
+#endif
     APInt offset(bitwidth, 0);
 
     // get offset of this GEP
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+    if (GEP->accumulateConstantOffset(dl, offset)) {
+#else
     if (GEP->accumulateConstantOffset(M->getDataLayout(), offset)) {
+#endif
         if (offset.isIntN(bitwidth) && !pointer.offset.isUnknown())
             pointer.offset = offset.getZExtValue();
         else

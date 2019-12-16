@@ -6,7 +6,12 @@
 #include "BlockGraph.h"
 #include "FunctionGraph.h"
 
-#include <llvm/IR/CFG.h>
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 5))
+        #include  <llvm/Support/CFG.h>
+#elif ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 9))
+        #include  <llvm/IR/CFG.h>
+#endif
+
 #include <llvm/IR/Instructions.h>
 #include <llvm/IR/Function.h>
 

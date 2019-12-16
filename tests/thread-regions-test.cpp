@@ -401,7 +401,11 @@ TEST_CASE("Test of GraphBuilder class methods", "[GraphBuilder]") {
     using namespace llvm;
     LLVMContext context;
     SMDiagnostic SMD;
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 5))
+    std::unique_ptr<Module> M(ParseIRFile(SIMPLE_FILE, SMD, context));
+#else
     std::unique_ptr<Module> M = parseIRFile(SIMPLE_FILE, SMD, context);
+#endif
     const Function * function = M->getFunction("sum");
     dg::LLVMPointerAnalysis pointsToAnalysis(M.get(), "main", dg::analysis::Offset::UNKNOWN, true);
     pointsToAnalysis.run<dg::analysis::pta::PointerAnalysisFI>();
@@ -466,7 +470,11 @@ TEST_CASE("GraphBuilder build tests", "[GraphBuilder]") {
     using namespace llvm;
     LLVMContext context;
     SMDiagnostic SMD;
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 5))    
+    std::unique_ptr<Module> M(ParseIRFile(PTHREAD_EXIT_FILE, SMD, context)); 
+#else
     std::unique_ptr<Module> M = parseIRFile(PTHREAD_EXIT_FILE, SMD, context); 
+#endif    
     dg::LLVMPointerAnalysis pointsToAnalysis(M.get(), "main", dg::analysis::Offset::UNKNOWN, true);
     pointsToAnalysis.run<dg::analysis::pta::PointerAnalysisFI>();
     std::unique_ptr<GraphBuilder> graphBuilder(new GraphBuilder(&pointsToAnalysis));

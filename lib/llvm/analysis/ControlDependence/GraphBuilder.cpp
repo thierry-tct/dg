@@ -13,7 +13,13 @@
 #endif
 
 #include <llvm/IR/Function.h>
-#include <llvm/IR/CFG.h>
+
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 5))
+        #include  <llvm/Support/CFG.h>
+#elif ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 9))
+        #include  <llvm/IR/CFG.h>
+#endif
+
 #include <llvm/Analysis/LoopInfo.h>
 #include <llvm/Pass.h>
 

@@ -59,7 +59,22 @@ add_library(LLVMpta SHARED
 	llvm/analysis/PointsTo/Calls.cpp
 	llvm/analysis/PointsTo/Threads.cpp
 )
-target_link_libraries(LLVMpta PUBLIC PTA)
+target_link_libraries(LLVMpta PUBLIC PTA 
+	 LLVMipo
+  LLVMScalarOpts
+  LLVMInstCombine
+  LLVMTransformUtils
+  LLVMipa
+  LLVMAnalysis
+  LLVMTarget
+  LLVMOption # Support
+  LLVMMCParser # MC, Support
+  LLVMMC # Object, Support
+  LLVMObject # BitReader, Core, Support
+  LLVMBitReader # Core, Support
+  LLVMCore # Support
+  LLVMSupport
+	)
 
 add_library(LLVMrd SHARED
 	llvm/analysis/ReachingDefinitions/LLVMRDBuilder.cpp

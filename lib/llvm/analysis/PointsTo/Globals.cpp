@@ -52,12 +52,19 @@ LLVMPointerGraphBuilder::handleGlobalVariableInitializer(const llvm::Constant *C
         node->setZeroInitialized();
     } else if (C->getType()->isAggregateType()) {
         uint64_t off = 0;
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+	llvm::DataLayout dl(M);
+#endif
         for (auto I = C->op_begin(), E = C->op_end(); I != E; ++I) {
             const Constant *op = cast<Constant>(*I);
             Type *Ty = op->getType();
             // recursively dive into the aggregate type
             handleGlobalVariableInitializer(op, node, offset + off);
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+            off += dl.getTypeAllocSize(Ty);
+#else
             off += M->getDataLayout().getTypeAllocSize(Ty);
+#endif
         }
     } else if (C->getType()->isPointerTy()) {
         PSNode *op = getOperand(C);
@@ -102,6 +109,10 @@ void LLVMPointerGraphBuilder::buildGlobals()
         addNode(&*I, nd);
     }
 
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+    llvm::DataLayout dl(M);
+#endif
+
     // only now handle the initializers - we need to have then
     // built, because they can point to each other
     for (auto I = M->global_begin(), E = M->global_end(); I != E; ++I) {
@@ -111,7 +122,11 @@ void LLVMPointerGraphBuilder::buildGlobals()
 
         // handle globals initialization
         if (const auto GV = llvm::dyn_cast<llvm::GlobalVariable>(&*I)) {
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+            node->setSize(getAllocatedSize(GV, &dl));
+#else
             node->setSize(getAllocatedSize(GV, &M->getDataLayout()));
+#endif
 
             if (GV->hasInitializer() && !GV->isExternallyInitialized()) {
                 const llvm::Constant *C = GV->getInitializer();

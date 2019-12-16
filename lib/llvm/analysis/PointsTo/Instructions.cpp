@@ -9,9 +9,16 @@ LLVMPointerGraphBuilder::PSNodesSeq&
 LLVMPointerGraphBuilder::createAlloc(const llvm::Instruction *Inst) {
     PSNodeAlloc *node = PSNodeAlloc::get(PS.create(PSNodeType::ALLOC));
 
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+    llvm::DataLayout dl(M);
+#endif
     const llvm::AllocaInst *AI = llvm::dyn_cast<llvm::AllocaInst>(Inst);
     if (AI)
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+        node->setSize(getAllocatedSize(AI, &dl));
+#else
         node->setSize(getAllocatedSize(AI, &M->getDataLayout()));
+#endif
 
     return addNode(Inst, node);
 }
@@ -55,14 +62,24 @@ LLVMPointerGraphBuilder::createGEP(const llvm::Instruction *Inst) {
 
     const GetElementPtrInst *GEP = cast<GetElementPtrInst>(Inst);
     const Value *ptrOp = GEP->getPointerOperand();
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+    llvm::DataLayout dl(M);
+    unsigned bitwidth = getPointerBitwidth(&dl, ptrOp);
+#else
     unsigned bitwidth = getPointerBitwidth(&M->getDataLayout(), ptrOp);
+#endif
     APInt offset(bitwidth, 0);
 
     PSNode *node = nullptr;
     PSNode *op = getOperand(ptrOp);
 
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+    if (*_options.fieldSensitivity > 0
+        && GEP->accumulateConstantOffset(dl, offset)) {
+#else
     if (*_options.fieldSensitivity > 0
         && GEP->accumulateConstantOffset(M->getDataLayout(), offset)) {
+#endif
         // is offset in given bitwidth?
         if (offset.isIntN(bitwidth)) {
             // is 0 < offset < field_sensitivity ?
@@ -136,8 +153,14 @@ LLVMPointerGraphBuilder::createExtract(const llvm::Instruction *Inst)
 
     // extract <agg> <idx> {<idx>, ...}
     PSNode *op1 = getOperand(EI->getAggregateOperand());
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+    llvm::DataLayout dl(M);
+    PSNode *G = PS.create(PSNodeType::GEP, op1,
+                          accumulateEVOffsets(EI, dl));
+#else
     PSNode *G = PS.create(PSNodeType::GEP, op1,
                           accumulateEVOffsets(EI, M->getDataLayout()));
+#endif
     PSNode *L = PS.create(PSNodeType::LOAD, G);
 
     // FIXME: add this later with all edges
@@ -281,6 +304,10 @@ LLVMPointerGraphBuilder::createReturn(const llvm::Instruction *Inst) {
     // is nullptr if this is 'ret void'
     llvm::Value *retVal = llvm::cast<llvm::ReturnInst>(Inst)->getReturnValue();
 
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+    llvm::DataLayout dl(M);
+#endif
+
     // we create even void and non-pointer return nodes,
     // since these modify CFG (they won't bear any
     // points-to information though)
@@ -315,7 +342,11 @@ LLVMPointerGraphBuilder::createReturn(const llvm::Instruction *Inst) {
         if (llvm::isa<llvm::ConstantPointerNull>(retVal)
             || isConstantZero(retVal))
             op1 = NULLPTR;
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+        else if (typeCanBePointer(&dl, retVal->getType()) &&
+#else
         else if (typeCanBePointer(&M->getDataLayout(), retVal->getType()) &&
+#endif
                   (!isInvalid(retVal->stripPointerCasts(), invalidate_nodes) ||
                    llvm::isa<llvm::ConstantExpr>(retVal) ||
                    llvm::isa<llvm::UndefValue>(retVal)))
@@ -370,9 +401,15 @@ LLVMPointerGraphBuilder::createInsertElement(const llvm::Instruction *Inst) {
     assert(idx != ~((uint64_t) 0) && "Invalid index");
 
     auto Ty = llvm::cast<llvm::InsertElementInst>(Inst)->getType();
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+    llvm::DataLayout dl(M);
+    auto elemSize = getAllocatedSize(Ty->getContainedType(0), &dl);
+    tempAlloc->setSize(getAllocatedSize(Ty, &dl));
+#else
     auto elemSize = getAllocatedSize(Ty->getContainedType(0), &M->getDataLayout());
     // also, set the size of the temporary allocation
     tempAlloc->setSize(getAllocatedSize(Ty, &M->getDataLayout()));
+#endif
 
     auto GEP = PS.create(PSNodeType::GEP, tempAlloc, elemSize*idx);
     auto S = PS.create(PSNodeType::STORE, ptr, GEP);
@@ -399,7 +436,12 @@ LLVMPointerGraphBuilder::createExtractElement(const llvm::Instruction *Inst) {
     assert(idx != ~((uint64_t) 0) && "Invalid index");
 
     auto Ty = llvm::cast<llvm::ExtractElementInst>(Inst)->getVectorOperandType();
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+    llvm::DataLayout dl(M);
+    auto elemSize = getAllocatedSize(Ty->getContainedType(0), &dl);
+#else
     auto elemSize = getAllocatedSize(Ty->getContainedType(0), &M->getDataLayout());
+#endif
 
     auto GEP = PS.create(PSNodeType::GEP, op, elemSize*idx);
     auto L = PS.create(PSNodeType::LOAD, GEP);

@@ -28,7 +28,11 @@
 #include <llvm/IR/Constant.h>
 #include <llvm/Support/raw_os_ostream.h>
 
-#include <llvm/IR/Dominators.h>
+//#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+// #include <llvm/Analysis/Dominators.h>
+//#else
+// #include <llvm/IR/Dominators.h>
+//#endif
 
 #if (__clang__)
 #pragma clang diagnostic pop // ignore -Wunused-parameter
@@ -45,6 +49,7 @@
 
 #include "dg/util/debug.h"
 
+ #include <llvm/Analysis/Dominators.h>
 namespace dg {
 namespace analysis {
 namespace pta {
@@ -284,7 +289,7 @@ static bool isRelevantCall(const llvm::Instruction *Inst, bool invalidate_nodes,
                            const OptsT& opts)
 {
     using namespace llvm;
-
+    //llvm::DominatorTree DTree;
     // we don't care about debugging stuff
     if (isa<DbgValueInst>(Inst))
         return false;
@@ -328,6 +333,9 @@ LLVMPointerGraphBuilder::buildInstruction(const llvm::Instruction& Inst) {
     using namespace llvm;
 
     PSNodesSeq *seq{nullptr};
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+	    DataLayout dl(M);
+#endif
 
     switch(Inst.getOpcode()) {
         case Instruction::Alloca:
@@ -401,7 +409,11 @@ LLVMPointerGraphBuilder::buildInstruction(const llvm::Instruction& Inst) {
             break;
         case Instruction::FPToUI:
         case Instruction::FPToSI:
-            if (typeCanBePointer(&M->getDataLayout(), Inst.getType()))
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+	    if (typeCanBePointer(&dl, Inst.getType()))
+#else
+	    if (typeCanBePointer(&M->getDataLayout(), Inst.getType()))
+#endif
                 seq = &createCast(&Inst);
             else
                 seq = &createUnknown(&Inst);
@@ -491,10 +503,12 @@ std::vector<const llvm::BasicBlock *> getBasicBlocksInDominatorOrder(llvm::Funct
 {
     std::vector<const llvm::BasicBlock *> blocks;
     blocks.reserve(F.size());
-
-#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 9))
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 5))
+    llvm::DominatorTree DTree;
+    DTree.getBase().recalculate(F);
+#elif ( LLVM_VERSION_MINOR >= 5))
         llvm::DominatorTree DTree;
-        DTree.recalculate(F);
+       DTree.recalculate(F);
 #else
         llvm::DominatorTreeWrapperPass wrapper;
         wrapper.runOnFunction(F);
@@ -504,7 +518,7 @@ std::vector<const llvm::BasicBlock *> getBasicBlocksInDominatorOrder(llvm::Funct
 #endif
 #endif
 
-    auto root_node = DTree.getRootNode();
+auto root_node = DTree.getBase().getRootNode();
     blocks.push_back(root_node->getBlock());
 
     std::vector<llvm::DomTreeNode *> to_process;

@@ -28,7 +28,11 @@
 #include <llvm/IR/Constant.h>
 #include <llvm/Support/raw_os_ostream.h>
 
-#include <llvm/IR/Dominators.h>
+#if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MAJOR <5 ) )
+ #include <llvm/Analysis/Dominators.h>
+#else
+ #include <llvm/IR/Dominators.h>
+#endif
 
 #if (__clang__)
 #pragma clang diagnostic pop // ignore -Wunused-parameter
