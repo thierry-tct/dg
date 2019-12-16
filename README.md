@@ -29,8 +29,10 @@ cd dg
 Once you have the project cloned, you need to configure it.
 Fully manual configuration would look like this:
 
+
 ```
-cmake -DLLVM_SRC_PATH=/path/to/src -DLLVM_BUILD_PATH=/path/to/build -DLLVM_DIR=path/to/llvm/share/llvm/cmake .
+mkdir build
+cmake -DLLVM_SRC_PATH=/path/to/src -DLLVM_BUILD_PATH=/path/to/build -DLLVM_DIR=path/to/llvm/share/llvm/cmake ..
 ```
 
 LLVM\_DIR is an environment variable used by LLVM to find cmake config files
@@ -55,7 +57,7 @@ For the last case, suppose you have LLVM built in /home/user/llvm-build from
 sources in /home/user/llvm-src. Then the following configuration should work:
 
 ```
-cmake -DLLVM_SRC_PATH=/home/user/llvm-src -DLLVM_BUILD_PATH=/home/user/llvm-build -DLLVM_DIR=/home/user/llvm-build/share/llvm/cmake .
+cmake -DLLVM_SRC_PATH=/home/user/llvm-src -DLLVM_BUILD_PATH=/home/user/llvm-build -DLLVM_DIR=/home/user/llvm-build/share/llvm/cmake ..
 ```
 
 After configuring the project, usual make takes place:
@@ -68,7 +70,12 @@ make -j4
 
 You can run tests with `make check` or `make test`. To change the pointer analysis used while testing,
 you can export `DG_TESTS_PTA` variable before running tests and set it to one of `fi` or `fs`.
-
+```
+cp tests/** build/tests
+cp tools/** build/tools
+cd build
+make check
+```
 ### Using the slicer
 
 The ompiled `llvm-slicer` can be found in the `tools` subdirectory. First, you need to compile your
