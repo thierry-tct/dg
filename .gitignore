@@ -67,7 +67,7 @@ git-version.h
 
 #build directory
 build
-
+bin
 #sourcetrail files
 dg.srctrl*
 
