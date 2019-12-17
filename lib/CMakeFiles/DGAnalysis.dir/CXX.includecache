@@ -6,3 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/home/wei/CLionProjects/Features/dg/lib/analysis/Offset.cpp
+dg/analysis/Offset.h
+/home/wei/CLionProjects/Features/dg/lib/analysis/dg/analysis/Offset.h
+
+include/dg/analysis/Offset.h
+cstdint
+-
+iostream
+-
+

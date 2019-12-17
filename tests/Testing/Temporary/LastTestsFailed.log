@@ -1,0 +1,14 @@
+1:dg-test
+2:data-flow-test
+3:points-to-test
+4:reaching-definitions-test
+5:adt-test
+6:bitvector-test
+7:numbers-set-test
+8:points-to-set-test
+9:disjunctive-intervals-map-test
+10:nodes-walk-test
+11:numbers-set1-regressions
+12:disjunctive-interval-map-regressions
+13:thread-regions-test
+14:llvm-dg-test

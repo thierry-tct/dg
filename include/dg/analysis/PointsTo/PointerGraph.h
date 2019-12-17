@@ -319,7 +319,8 @@ public:
 
         struct DfsIdTracker {
             const unsigned dfsnum;
-            DfsIdTracker(unsigned dnum) : dfsnum(dnum) {}
+            DfsIdTracker() : dfsnum(0) {}
+	    DfsIdTracker(unsigned dnum) : dfsnum(dnum) {}
 
             void visit(PSNode *n) { n->dfsid = dfsnum; }
             bool visited(PSNode *n) const { return n->dfsid == dfsnum; }

@@ -43,10 +43,10 @@ RM = /home/wei/anaconda3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wei/Downloads/dg
+CMAKE_SOURCE_DIR = /home/wei/CLionProjects/Features/dg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wei/Downloads/dg
+CMAKE_BINARY_DIR = /home/wei/CLionProjects/Features/dg
 
 # Include any dependencies generated for this target.
 include lib/CMakeFiles/RD.dir/depend.make
@@ -59,29 +59,29 @@ include lib/CMakeFiles/RD.dir/flags.make
 
 lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.o: lib/CMakeFiles/RD.dir/flags.make
 lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.o: lib/analysis/ReachingDefinitions/BasicRDMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/Downloads/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.o"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.o -c /home/wei/Downloads/dg/lib/analysis/ReachingDefinitions/BasicRDMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/CLionProjects/Features/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.o"
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.o -c /home/wei/CLionProjects/Features/dg/lib/analysis/ReachingDefinitions/BasicRDMap.cpp
 
 lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.i"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/Downloads/dg/lib/analysis/ReachingDefinitions/BasicRDMap.cpp > CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.i
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/CLionProjects/Features/dg/lib/analysis/ReachingDefinitions/BasicRDMap.cpp > CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.i
 
 lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.s"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/Downloads/dg/lib/analysis/ReachingDefinitions/BasicRDMap.cpp -o CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.s
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/CLionProjects/Features/dg/lib/analysis/ReachingDefinitions/BasicRDMap.cpp -o CMakeFiles/RD.dir/analysis/ReachingDefinitions/BasicRDMap.cpp.s
 
 lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.o: lib/CMakeFiles/RD.dir/flags.make
 lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.o: lib/analysis/ReachingDefinitions/ReachingDefinitions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/Downloads/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.o"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.o -c /home/wei/Downloads/dg/lib/analysis/ReachingDefinitions/ReachingDefinitions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/CLionProjects/Features/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.o"
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.o -c /home/wei/CLionProjects/Features/dg/lib/analysis/ReachingDefinitions/ReachingDefinitions.cpp
 
 lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.i"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/Downloads/dg/lib/analysis/ReachingDefinitions/ReachingDefinitions.cpp > CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.i
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/CLionProjects/Features/dg/lib/analysis/ReachingDefinitions/ReachingDefinitions.cpp > CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.i
 
 lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.s"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/Downloads/dg/lib/analysis/ReachingDefinitions/ReachingDefinitions.cpp -o CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.s
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/CLionProjects/Features/dg/lib/analysis/ReachingDefinitions/ReachingDefinitions.cpp -o CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinitions.cpp.s
 
 # Object files for target RD
 RD_OBJECTS = \
@@ -96,8 +96,8 @@ lib/libRD.so: lib/CMakeFiles/RD.dir/analysis/ReachingDefinitions/ReachingDefinit
 lib/libRD.so: lib/CMakeFiles/RD.dir/build.make
 lib/libRD.so: lib/libDGAnalysis.so
 lib/libRD.so: lib/CMakeFiles/RD.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wei/Downloads/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libRD.so"
-	cd /home/wei/Downloads/dg/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RD.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wei/CLionProjects/Features/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libRD.so"
+	cd /home/wei/CLionProjects/Features/dg/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RD.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/CMakeFiles/RD.dir/build: lib/libRD.so
@@ -105,10 +105,10 @@ lib/CMakeFiles/RD.dir/build: lib/libRD.so
 .PHONY : lib/CMakeFiles/RD.dir/build
 
 lib/CMakeFiles/RD.dir/clean:
-	cd /home/wei/Downloads/dg/lib && $(CMAKE_COMMAND) -P CMakeFiles/RD.dir/cmake_clean.cmake
+	cd /home/wei/CLionProjects/Features/dg/lib && $(CMAKE_COMMAND) -P CMakeFiles/RD.dir/cmake_clean.cmake
 .PHONY : lib/CMakeFiles/RD.dir/clean
 
 lib/CMakeFiles/RD.dir/depend:
-	cd /home/wei/Downloads/dg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wei/Downloads/dg /home/wei/Downloads/dg/lib /home/wei/Downloads/dg /home/wei/Downloads/dg/lib /home/wei/Downloads/dg/lib/CMakeFiles/RD.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wei/CLionProjects/Features/dg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wei/CLionProjects/Features/dg /home/wei/CLionProjects/Features/dg/lib /home/wei/CLionProjects/Features/dg /home/wei/CLionProjects/Features/dg/lib /home/wei/CLionProjects/Features/dg/lib/CMakeFiles/RD.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/CMakeFiles/RD.dir/depend
 

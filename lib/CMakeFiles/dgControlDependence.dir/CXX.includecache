@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/wei/Downloads/dg/lib/llvm/analysis/ControlDependence/Block.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Block.h
 vector
 -
 set
@@ -16,21 +16,21 @@ map
 iosfwd
 -
 
-/home/wei/Downloads/dg/lib/llvm/analysis/ControlDependence/Function.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Function.h
 set
 -
 iosfwd
 -
 
-/home/wei/Downloads/dg/lib/llvm/analysis/ControlDependence/GraphBuilder.cpp
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/GraphBuilder.cpp
 GraphBuilder.h
-/home/wei/Downloads/dg/lib/llvm/analysis/ControlDependence/GraphBuilder.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/GraphBuilder.h
 Function.h
-/home/wei/Downloads/dg/lib/llvm/analysis/ControlDependence/Function.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Function.h
 Block.h
-/home/wei/Downloads/dg/lib/llvm/analysis/ControlDependence/Block.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Block.h
 TarjanAnalysis.h
-/home/wei/Downloads/dg/lib/llvm/analysis/ControlDependence/TarjanAnalysis.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/TarjanAnalysis.h
 llvm/IR/Function.h
 -
 llvm/Support/CFG.h
@@ -42,15 +42,15 @@ llvm/Analysis/LoopInfo.h
 llvm/Pass.h
 -
 dg/llvm/analysis/PointsTo/PointerAnalysis.h
-/home/wei/Downloads/dg/lib/llvm/analysis/ControlDependence/dg/llvm/analysis/PointsTo/PointerAnalysis.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/dg/llvm/analysis/PointsTo/PointerAnalysis.h
 
-/home/wei/Downloads/dg/lib/llvm/analysis/ControlDependence/GraphBuilder.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/GraphBuilder.h
 map
 -
 iosfwd
 -
 
-/home/wei/Downloads/dg/lib/llvm/analysis/ControlDependence/TarjanAnalysis.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/TarjanAnalysis.h
 vector
 -
 set

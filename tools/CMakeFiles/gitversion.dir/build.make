@@ -43,10 +43,10 @@ RM = /home/wei/anaconda3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wei/CLionProjects/dg
+CMAKE_SOURCE_DIR = /home/wei/CLionProjects/Features/dg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wei/CLionProjects/dg/build
+CMAKE_BINARY_DIR = /home/wei/CLionProjects/Features/dg
 
 # Utility rule file for gitversion.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/wei/CLionProjects/dg/build
 include tools/CMakeFiles/gitversion.dir/progress.make
 
 tools/CMakeFiles/gitversion:
-	cd /home/wei/CLionProjects/dg/build/tools && sh /home/wei/CLionProjects/dg/tools/git-version.sh
+	cd /home/wei/CLionProjects/Features/dg/tools && sh /home/wei/CLionProjects/Features/dg/tools/git-version.sh
 
 gitversion: tools/CMakeFiles/gitversion
 gitversion: tools/CMakeFiles/gitversion.dir/build.make
@@ -67,10 +67,10 @@ tools/CMakeFiles/gitversion.dir/build: gitversion
 .PHONY : tools/CMakeFiles/gitversion.dir/build
 
 tools/CMakeFiles/gitversion.dir/clean:
-	cd /home/wei/CLionProjects/dg/build/tools && $(CMAKE_COMMAND) -P CMakeFiles/gitversion.dir/cmake_clean.cmake
+	cd /home/wei/CLionProjects/Features/dg/tools && $(CMAKE_COMMAND) -P CMakeFiles/gitversion.dir/cmake_clean.cmake
 .PHONY : tools/CMakeFiles/gitversion.dir/clean
 
 tools/CMakeFiles/gitversion.dir/depend:
-	cd /home/wei/CLionProjects/dg/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wei/CLionProjects/dg /home/wei/CLionProjects/dg/tools /home/wei/CLionProjects/dg/build /home/wei/CLionProjects/dg/build/tools /home/wei/CLionProjects/dg/build/tools/CMakeFiles/gitversion.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wei/CLionProjects/Features/dg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wei/CLionProjects/Features/dg /home/wei/CLionProjects/Features/dg/tools /home/wei/CLionProjects/Features/dg /home/wei/CLionProjects/Features/dg/tools /home/wei/CLionProjects/Features/dg/tools/CMakeFiles/gitversion.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/CMakeFiles/gitversion.dir/depend
 

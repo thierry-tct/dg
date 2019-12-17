@@ -1,0 +1,1 @@
+/usr/bin/c++   -fno-rtti -std=c++11 -Wall -Wextra -g  -rdynamic CMakeFiles/bitvector-test.dir/bitvector-test.cpp.o  -o bitvector-test  -L/usr/local/lib 

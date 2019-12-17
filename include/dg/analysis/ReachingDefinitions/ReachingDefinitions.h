@@ -193,6 +193,7 @@ public:
 
         struct DfsIdTracker {
             const unsigned dfsnum;
+	    DfsIdTracker(): dfsnum(0){}
             DfsIdTracker(unsigned dnum) : dfsnum(dnum) {}
 
             void visit(RDNode *n) { n->dfsid = dfsnum; }

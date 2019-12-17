@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/wei/Downloads/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/GraphBuilder.cpp
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/GraphBuilder.cpp
 GraphBuilder.h
-/home/wei/Downloads/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/GraphBuilder.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/GraphBuilder.h
 dg/llvm/analysis/PointsTo/PointerAnalysis.h
-/home/wei/Downloads/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/dg/llvm/analysis/PointsTo/PointerAnalysis.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/dg/llvm/analysis/PointsTo/PointerAnalysis.h
 Nodes.h
-/home/wei/Downloads/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/Nodes.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/Nodes.h
 BlockGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/BlockGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/BlockGraph.h
 FunctionGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/FunctionGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/FunctionGraph.h
 llvm/Support/CFG.h
 -
 llvm/IR/CFG.h

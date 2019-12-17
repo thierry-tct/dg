@@ -1,0 +1,1 @@
+/usr/bin/c++   -fno-rtti -std=c++11 -Wall -Wextra -g  -rdynamic CMakeFiles/numbers-set-test.dir/numbers-set-test.cpp.o  -o numbers-set-test  -L/usr/local/lib 

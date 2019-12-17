@@ -43,10 +43,10 @@ RM = /home/wei/anaconda3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wei/CLionProjects/dg
+CMAKE_SOURCE_DIR = /home/wei/CLionProjects/Features/dg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wei/CLionProjects/dg/build
+CMAKE_BINARY_DIR = /home/wei/CLionProjects/Features/dg
 
 # Include any dependencies generated for this target.
 include tools/CMakeFiles/dgllvmslicer.dir/depend.make
@@ -58,30 +58,30 @@ include tools/CMakeFiles/dgllvmslicer.dir/progress.make
 include tools/CMakeFiles/dgllvmslicer.dir/flags.make
 
 tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.o: tools/CMakeFiles/dgllvmslicer.dir/flags.make
-tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.o: ../tools/llvm-slicer-opts.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/CLionProjects/dg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.o"
-	cd /home/wei/CLionProjects/dg/build/tools && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.o -c /home/wei/CLionProjects/dg/tools/llvm-slicer-opts.cpp
+tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.o: tools/llvm-slicer-opts.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/CLionProjects/Features/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.o"
+	cd /home/wei/CLionProjects/Features/dg/tools && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.o -c /home/wei/CLionProjects/Features/dg/tools/llvm-slicer-opts.cpp
 
 tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.i"
-	cd /home/wei/CLionProjects/dg/build/tools && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/CLionProjects/dg/tools/llvm-slicer-opts.cpp > CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.i
+	cd /home/wei/CLionProjects/Features/dg/tools && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/CLionProjects/Features/dg/tools/llvm-slicer-opts.cpp > CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.i
 
 tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.s"
-	cd /home/wei/CLionProjects/dg/build/tools && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/CLionProjects/dg/tools/llvm-slicer-opts.cpp -o CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.s
+	cd /home/wei/CLionProjects/Features/dg/tools && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/CLionProjects/Features/dg/tools/llvm-slicer-opts.cpp -o CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp.s
 
 tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.o: tools/CMakeFiles/dgllvmslicer.dir/flags.make
-tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.o: ../tools/llvm-slicer-utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/CLionProjects/dg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.o"
-	cd /home/wei/CLionProjects/dg/build/tools && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.o -c /home/wei/CLionProjects/dg/tools/llvm-slicer-utils.cpp
+tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.o: tools/llvm-slicer-utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/CLionProjects/Features/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.o"
+	cd /home/wei/CLionProjects/Features/dg/tools && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.o -c /home/wei/CLionProjects/Features/dg/tools/llvm-slicer-utils.cpp
 
 tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.i"
-	cd /home/wei/CLionProjects/dg/build/tools && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/CLionProjects/dg/tools/llvm-slicer-utils.cpp > CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.i
+	cd /home/wei/CLionProjects/Features/dg/tools && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/CLionProjects/Features/dg/tools/llvm-slicer-utils.cpp > CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.i
 
 tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.s"
-	cd /home/wei/CLionProjects/dg/build/tools && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/CLionProjects/dg/tools/llvm-slicer-utils.cpp -o CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.s
+	cd /home/wei/CLionProjects/Features/dg/tools && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/CLionProjects/Features/dg/tools/llvm-slicer-utils.cpp -o CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.s
 
 # Object files for target dgllvmslicer
 dgllvmslicer_OBJECTS = \
@@ -95,8 +95,8 @@ tools/libdgllvmslicer.so: tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-opts.cpp
 tools/libdgllvmslicer.so: tools/CMakeFiles/dgllvmslicer.dir/llvm-slicer-utils.cpp.o
 tools/libdgllvmslicer.so: tools/CMakeFiles/dgllvmslicer.dir/build.make
 tools/libdgllvmslicer.so: tools/CMakeFiles/dgllvmslicer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wei/CLionProjects/dg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libdgllvmslicer.so"
-	cd /home/wei/CLionProjects/dg/build/tools && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dgllvmslicer.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wei/CLionProjects/Features/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libdgllvmslicer.so"
+	cd /home/wei/CLionProjects/Features/dg/tools && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dgllvmslicer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tools/CMakeFiles/dgllvmslicer.dir/build: tools/libdgllvmslicer.so
@@ -104,10 +104,10 @@ tools/CMakeFiles/dgllvmslicer.dir/build: tools/libdgllvmslicer.so
 .PHONY : tools/CMakeFiles/dgllvmslicer.dir/build
 
 tools/CMakeFiles/dgllvmslicer.dir/clean:
-	cd /home/wei/CLionProjects/dg/build/tools && $(CMAKE_COMMAND) -P CMakeFiles/dgllvmslicer.dir/cmake_clean.cmake
+	cd /home/wei/CLionProjects/Features/dg/tools && $(CMAKE_COMMAND) -P CMakeFiles/dgllvmslicer.dir/cmake_clean.cmake
 .PHONY : tools/CMakeFiles/dgllvmslicer.dir/clean
 
 tools/CMakeFiles/dgllvmslicer.dir/depend:
-	cd /home/wei/CLionProjects/dg/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wei/CLionProjects/dg /home/wei/CLionProjects/dg/tools /home/wei/CLionProjects/dg/build /home/wei/CLionProjects/dg/build/tools /home/wei/CLionProjects/dg/build/tools/CMakeFiles/dgllvmslicer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wei/CLionProjects/Features/dg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wei/CLionProjects/Features/dg /home/wei/CLionProjects/Features/dg/tools /home/wei/CLionProjects/Features/dg /home/wei/CLionProjects/Features/dg/tools /home/wei/CLionProjects/Features/dg/tools/CMakeFiles/dgllvmslicer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tools/CMakeFiles/dgllvmslicer.dir/depend
 

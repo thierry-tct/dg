@@ -1,0 +1,1 @@
+/usr/bin/c++   -fno-rtti -std=c++11 -Wall -Wextra -g  -rdynamic CMakeFiles/reaching-definitions-test.dir/reaching-definitions-test.cpp.o  -o reaching-definitions-test  -L/usr/local/lib -Wl,-rpath,/usr/local/lib:/home/wei/CLionProjects/Features/dg/lib ../lib/libRD.so ../lib/libDGAnalysis.so 

@@ -43,10 +43,10 @@ RM = /home/wei/anaconda3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wei/Downloads/dg
+CMAKE_SOURCE_DIR = /home/wei/CLionProjects/Features/dg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wei/Downloads/dg
+CMAKE_BINARY_DIR = /home/wei/CLionProjects/Features/dg
 
 # Include any dependencies generated for this target.
 include lib/CMakeFiles/LLVMdg.dir/depend.make
@@ -59,68 +59,68 @@ include lib/CMakeFiles/LLVMdg.dir/flags.make
 
 lib/CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.o: lib/CMakeFiles/LLVMdg.dir/flags.make
 lib/CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.o: lib/llvm/LLVMNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/Downloads/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.o"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.o -c /home/wei/Downloads/dg/lib/llvm/LLVMNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/CLionProjects/Features/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.o"
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.o -c /home/wei/CLionProjects/Features/dg/lib/llvm/LLVMNode.cpp
 
 lib/CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.i"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/Downloads/dg/lib/llvm/LLVMNode.cpp > CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.i
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/CLionProjects/Features/dg/lib/llvm/LLVMNode.cpp > CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.i
 
 lib/CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.s"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/Downloads/dg/lib/llvm/LLVMNode.cpp -o CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.s
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/CLionProjects/Features/dg/lib/llvm/LLVMNode.cpp -o CMakeFiles/LLVMdg.dir/llvm/LLVMNode.cpp.s
 
 lib/CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.o: lib/CMakeFiles/LLVMdg.dir/flags.make
 lib/CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.o: lib/llvm/LLVMDependenceGraph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/Downloads/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.o"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.o -c /home/wei/Downloads/dg/lib/llvm/LLVMDependenceGraph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/CLionProjects/Features/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.o"
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.o -c /home/wei/CLionProjects/Features/dg/lib/llvm/LLVMDependenceGraph.cpp
 
 lib/CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.i"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/Downloads/dg/lib/llvm/LLVMDependenceGraph.cpp > CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.i
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/CLionProjects/Features/dg/lib/llvm/LLVMDependenceGraph.cpp > CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.i
 
 lib/CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.s"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/Downloads/dg/lib/llvm/LLVMDependenceGraph.cpp -o CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.s
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/CLionProjects/Features/dg/lib/llvm/LLVMDependenceGraph.cpp -o CMakeFiles/LLVMdg.dir/llvm/LLVMDependenceGraph.cpp.s
 
 lib/CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.o: lib/CMakeFiles/LLVMdg.dir/flags.make
 lib/CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.o: lib/llvm/LLVMDGVerifier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/Downloads/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.o"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.o -c /home/wei/Downloads/dg/lib/llvm/LLVMDGVerifier.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/CLionProjects/Features/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.o"
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.o -c /home/wei/CLionProjects/Features/dg/lib/llvm/LLVMDGVerifier.cpp
 
 lib/CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.i"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/Downloads/dg/lib/llvm/LLVMDGVerifier.cpp > CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.i
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/CLionProjects/Features/dg/lib/llvm/LLVMDGVerifier.cpp > CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.i
 
 lib/CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.s"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/Downloads/dg/lib/llvm/LLVMDGVerifier.cpp -o CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.s
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/CLionProjects/Features/dg/lib/llvm/LLVMDGVerifier.cpp -o CMakeFiles/LLVMdg.dir/llvm/LLVMDGVerifier.cpp.s
 
 lib/CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.o: lib/CMakeFiles/LLVMdg.dir/flags.make
 lib/CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.o: lib/llvm/analysis/Dominators/PostDominators.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/Downloads/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.o"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.o -c /home/wei/Downloads/dg/lib/llvm/analysis/Dominators/PostDominators.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/CLionProjects/Features/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.o"
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.o -c /home/wei/CLionProjects/Features/dg/lib/llvm/analysis/Dominators/PostDominators.cpp
 
 lib/CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.i"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/Downloads/dg/lib/llvm/analysis/Dominators/PostDominators.cpp > CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.i
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/CLionProjects/Features/dg/lib/llvm/analysis/Dominators/PostDominators.cpp > CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.i
 
 lib/CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.s"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/Downloads/dg/lib/llvm/analysis/Dominators/PostDominators.cpp -o CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.s
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/CLionProjects/Features/dg/lib/llvm/analysis/Dominators/PostDominators.cpp -o CMakeFiles/LLVMdg.dir/llvm/analysis/Dominators/PostDominators.cpp.s
 
 lib/CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.o: lib/CMakeFiles/LLVMdg.dir/flags.make
 lib/CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.o: lib/llvm/analysis/DefUse/DefUse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/Downloads/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.o"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.o -c /home/wei/Downloads/dg/lib/llvm/analysis/DefUse/DefUse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wei/CLionProjects/Features/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.o"
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.o -c /home/wei/CLionProjects/Features/dg/lib/llvm/analysis/DefUse/DefUse.cpp
 
 lib/CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.i"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/Downloads/dg/lib/llvm/analysis/DefUse/DefUse.cpp > CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.i
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wei/CLionProjects/Features/dg/lib/llvm/analysis/DefUse/DefUse.cpp > CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.i
 
 lib/CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.s"
-	cd /home/wei/Downloads/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/Downloads/dg/lib/llvm/analysis/DefUse/DefUse.cpp -o CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.s
+	cd /home/wei/CLionProjects/Features/dg/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wei/CLionProjects/Features/dg/lib/llvm/analysis/DefUse/DefUse.cpp -o CMakeFiles/LLVMdg.dir/llvm/analysis/DefUse/DefUse.cpp.s
 
 # Object files for target LLVMdg
 LLVMdg_OBJECTS = \
@@ -147,8 +147,8 @@ lib/libLLVMdg.so: lib/libLLVMpta.so
 lib/libLLVMdg.so: lib/libPTA.so
 lib/libLLVMdg.so: lib/libDGAnalysis.so
 lib/libLLVMdg.so: lib/CMakeFiles/LLVMdg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wei/Downloads/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libLLVMdg.so"
-	cd /home/wei/Downloads/dg/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LLVMdg.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wei/CLionProjects/Features/dg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libLLVMdg.so"
+	cd /home/wei/CLionProjects/Features/dg/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LLVMdg.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/CMakeFiles/LLVMdg.dir/build: lib/libLLVMdg.so
@@ -156,10 +156,10 @@ lib/CMakeFiles/LLVMdg.dir/build: lib/libLLVMdg.so
 .PHONY : lib/CMakeFiles/LLVMdg.dir/build
 
 lib/CMakeFiles/LLVMdg.dir/clean:
-	cd /home/wei/Downloads/dg/lib && $(CMAKE_COMMAND) -P CMakeFiles/LLVMdg.dir/cmake_clean.cmake
+	cd /home/wei/CLionProjects/Features/dg/lib && $(CMAKE_COMMAND) -P CMakeFiles/LLVMdg.dir/cmake_clean.cmake
 .PHONY : lib/CMakeFiles/LLVMdg.dir/clean
 
 lib/CMakeFiles/LLVMdg.dir/depend:
-	cd /home/wei/Downloads/dg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wei/Downloads/dg /home/wei/Downloads/dg/lib /home/wei/Downloads/dg /home/wei/Downloads/dg/lib /home/wei/Downloads/dg/lib/CMakeFiles/LLVMdg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wei/CLionProjects/Features/dg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wei/CLionProjects/Features/dg /home/wei/CLionProjects/Features/dg/lib /home/wei/CLionProjects/Features/dg /home/wei/CLionProjects/Features/dg/lib /home/wei/CLionProjects/Features/dg/lib/CMakeFiles/LLVMdg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/CMakeFiles/LLVMdg.dir/depend
 

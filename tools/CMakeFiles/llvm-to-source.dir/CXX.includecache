@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/wei/CLionProjects/dg/tools/llvm-to-source.cpp
+/home/wei/CLionProjects/Features/dg/tools/llvm-to-source.cpp
 set
 -
 iostream

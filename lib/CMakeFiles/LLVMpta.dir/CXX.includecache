@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/Block.cpp
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Block.cpp
 llvm/Config/llvm-config.h
 -
 llvm/Support/CFG.h
@@ -20,21 +20,21 @@ llvm/IR/Module.h
 llvm/Support/raw_os_ostream.h
 -
 dg/llvm/analysis/PointsTo/PointerGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
 
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/Calls.cpp
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Calls.cpp
 dg/llvm/analysis/PointsTo/PointerGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
 llvm/llvm-utils.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/llvm/llvm-utils.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/llvm/llvm-utils.h
 
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/Constants.cpp
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Constants.cpp
 dg/llvm/analysis/PointsTo/PointerGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
 llvm/llvm-utils.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/llvm/llvm-utils.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/llvm/llvm-utils.h
 
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/Globals.cpp
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Globals.cpp
 cassert
 -
 set
@@ -64,15 +64,15 @@ llvm/IR/Constant.h
 llvm/Support/raw_os_ostream.h
 -
 dg/llvm/analysis/PointsTo/PointerGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
 
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/Instructions.cpp
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Instructions.cpp
 dg/llvm/analysis/PointsTo/PointerGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
 llvm/llvm-utils.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/llvm/llvm-utils.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/llvm/llvm-utils.h
 
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/Interprocedural.cpp
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Interprocedural.cpp
 llvm/Config/llvm-config.h
 -
 llvm/Support/CFG.h
@@ -86,9 +86,9 @@ llvm/IR/Module.h
 llvm/Support/raw_os_ostream.h
 -
 dg/llvm/analysis/PointsTo/PointerGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
 
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/PointerGraph.cpp
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/PointerGraph.cpp
 cassert
 -
 set
@@ -118,21 +118,29 @@ llvm/IR/Constant.h
 llvm/Support/raw_os_ostream.h
 -
 dg/analysis/PointsTo/PointerGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/analysis/PointsTo/PointerGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/analysis/PointsTo/PointerGraph.h
 dg/analysis/PointsTo/PointerGraphOptimizations.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/analysis/PointsTo/PointerGraphOptimizations.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/analysis/PointsTo/PointerGraphOptimizations.h
 dg/llvm/analysis/PointsTo/PointerGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
 llvm/analysis/PointsTo/PointerGraphValidator.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/llvm/analysis/PointsTo/PointerGraphValidator.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/llvm/analysis/PointsTo/PointerGraphValidator.h
 llvm/llvm-utils.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/llvm/llvm-utils.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/llvm/llvm-utils.h
 dg/util/debug.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/util/debug.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/util/debug.h
 llvm/Analysis/Dominators.h
 -
 
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/Structure.cpp
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/PointerGraphValidator.cpp
+llvm/IR/Value.h
+-
+llvm/IR/Type.h
+-
+llvm/analysis/PointsTo/PointerGraphValidator.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/llvm/analysis/PointsTo/PointerGraphValidator.h
+
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Structure.cpp
 cassert
 -
 set
@@ -162,11 +170,11 @@ llvm/IR/Constant.h
 llvm/Support/raw_os_ostream.h
 -
 dg/llvm/analysis/PointsTo/PointerGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
 dg/util/debug.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/util/debug.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/util/debug.h
 
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/Threads.cpp
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Threads.cpp
 cassert
 -
 set
@@ -200,17 +208,17 @@ llvm/Analysis/Dominators.h
 llvm/IR/Dominators.h
 -
 dg/analysis/PointsTo/PointerGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/analysis/PointsTo/PointerGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/analysis/PointsTo/PointerGraph.h
 dg/analysis/PointsTo/PointerGraphOptimizations.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/analysis/PointsTo/PointerGraphOptimizations.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/analysis/PointsTo/PointerGraphOptimizations.h
 dg/llvm/analysis/PointsTo/PointerGraph.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/llvm/analysis/PointsTo/PointerGraph.h
 llvm/analysis/PointsTo/PointerGraphValidator.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/llvm/analysis/PointsTo/PointerGraphValidator.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/llvm/analysis/PointsTo/PointerGraphValidator.h
 llvm/llvm-utils.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/llvm/llvm-utils.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/llvm/llvm-utils.h
 dg/util/debug.h
-/home/wei/Downloads/dg/lib/llvm/analysis/PointsTo/dg/util/debug.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/dg/util/debug.h
 
 include/dg/ADT/Bitvector.h
 map
