@@ -35,7 +35,7 @@ struct Indent
     friend std::ostream& operator <<(std::ostream& os, const Indent& ind);
 };
 
-std::ostream& operator <<(std::ostream& os, const Indent& ind)
+inline std::ostream& operator <<(std::ostream& os, const Indent& ind)
 {
     for (int i = 0; i < ind.ind; ++i)
         os << "\t";
