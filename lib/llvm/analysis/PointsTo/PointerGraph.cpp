@@ -506,7 +506,7 @@ std::vector<const llvm::BasicBlock *> getBasicBlocksInDominatorOrder(llvm::Funct
 #if ((LLVM_VERSION_MAJOR == 3) && (LLVM_VERSION_MINOR < 5))
     llvm::DominatorTree DTree;
     DTree.getBase().recalculate(F);
-#elif ( LLVM_VERSION_MINOR >= 5))
+#elif ( LLVM_VERSION_MINOR >= 5)
         llvm::DominatorTree DTree;
        DTree.recalculate(F);
 #else
