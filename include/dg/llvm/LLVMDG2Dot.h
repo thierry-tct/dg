@@ -216,7 +216,7 @@ private:
             dumpBBlockEdges(B.second);
         }
 
-        dumpSubgraphEnd(graph);
+        dumpSubgraphEnd(graph, true);
     }
 };
 

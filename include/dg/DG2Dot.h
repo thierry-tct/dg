@@ -65,7 +65,6 @@ public:
     void setSlicingCriteria(const std::set<NodeT *>& crit) {
         criteria = crit;
     }
-
     bool open(const char *new_file)
     {
         if (out.is_open()) {

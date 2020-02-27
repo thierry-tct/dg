@@ -91,7 +91,10 @@ RDNode *LLVMRDBuilder::createAlloc(const llvm::Instruction *Inst)
     if (iterator == nodes_map.end()) {
         addNode(Inst, node);
     } else {
-        assert(iterator->second->getType() == RDNodeType::CALL && "Adding node we already have");
+        //assert(iterator->second->getType() == RDNodeType::CALL && "Adding node we already have");
+        if(iterator->second->getType() == RDNodeType::CALL){
+            return iterator->second;
+        }
         addArtificialNode(Inst, node);
         makeEdge(iterator->second, node);
     }
@@ -112,7 +115,10 @@ RDNode *LLVMRDBuilder::createDynAlloc(const llvm::Instruction *Inst, AllocationF
     if (iterator == nodes_map.end()) {
         addNode(Inst, node);
     } else {
-        assert(iterator->second->getType() == RDNodeType::CALL && "Adding node we already have");
+        //assert(iterator->second->getType() == RDNodeType::CALL && "Adding node we already have");
+        if(iterator->second->getType() == RDNodeType::CALL){
+            return iterator->second;
+        }
         addArtificialNode(Inst, node);
     }
 
@@ -156,7 +162,10 @@ RDNode *LLVMRDBuilder::createRealloc(const llvm::Instruction *Inst)
     if (iterator == nodes_map.end()) {
         addNode(Inst, node);
     } else {
-        assert(iterator->second->getType() == RDNodeType::CALL && "Adding node we already have");
+        //assert(iterator->second->getType() == RDNodeType::CALL && "Adding node we already have");
+        if(iterator->second->getType() == RDNodeType::CALL){
+            return iterator->second;
+        }
         addArtificialNode(Inst, node);
     }
 
@@ -731,9 +740,12 @@ RDNode *LLVMRDBuilder::createUndefinedCall(const llvm::CallInst *CInst)
 {
     using namespace llvm;
 
-    assert((nodes_map.find(CInst) == nodes_map.end())
-           && "Adding node we already have");
-
+//    assert((nodes_map.find(CInst) == nodes_map.end())
+//           && "Adding node we already have");
+    if(nodes_map.find(CInst) != nodes_map.end()){
+        auto iterator = nodes_map.find(CInst);
+        return iterator->second;
+    }
     RDNode *node = create(RDNodeType::CALL);
     addNode(CInst, node);
 
@@ -1033,7 +1045,10 @@ RDNode *LLVMRDBuilder::createPthreadCreateCalls(const llvm::CallInst *CInst)
     if (iterator == nodes_map.end()) {
         addNode(CInst, rootNode);
     } else {
-        assert(iterator->second->getType() == RDNodeType::CALL && "Adding node we already have");
+        //assert(iterator->second->getType() == RDNodeType::CALL && "Adding node we already have");
+        if(iterator->second->getType() == RDNodeType::CALL){
+            return iterator->second;
+        }
         addArtificialNode(CInst, rootNode);
     }
     threadCreateCalls.emplace(CInst, rootNode);
