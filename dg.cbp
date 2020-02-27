@@ -1,0 +1,2080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="dg"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\usr\local\share\llvm\;CMake Files\..\..\..\..\..\usr\local\share\llvm\cmake\;CMake Files\lib\;CMake Files\lib\llvm\;CMake Files\lib\llvm\analysis\;CMake Files\lib\llvm\analysis\ThreadRegions\;CMake Files\lib\llvm\analysis\ThreadRegions\include\;CMake Files\lib\llvm\analysis\ThreadRegions\sources\;CMake Files\lib\llvm\analysis\ThreadRegions\sources\Nodes\;CMake Files\lib\llvm\analysis\ThreadRegions\sources\Graphs\;CMake Files\lib\llvm\analysis\ControlDependence\;CMake Files\tools\;CMake Files\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Continuous">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Experimental">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Nightly">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LLVMdg">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libLLVMdg.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 LLVMdg"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LLVMdg/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libLLVMdg.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 LLVMdg/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dgControlDependence">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libdgControlDependence.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 dgControlDependence"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dgControlDependence/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libdgControlDependence.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 dgControlDependence/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PTA">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libPTA.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 PTA"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PTA/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libPTA.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 PTA/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LLVMrd">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libLLVMrd.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 LLVMrd"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LLVMrd/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libLLVMrd.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 LLVMrd/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DGAnalysis">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libDGAnalysis.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 DGAnalysis"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DGAnalysis/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libDGAnalysis.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 DGAnalysis/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RD">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libRD.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 RD"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RD/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libRD.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 RD/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LLVMpta">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libLLVMpta.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 LLVMpta"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LLVMpta/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libLLVMpta.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 LLVMpta/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dgThreadRegions">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libdgThreadRegions.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/include/Graphs"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/include/Nodes"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 dgThreadRegions"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dgThreadRegions/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/lib/libdgThreadRegions.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/include/Graphs"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/include/Nodes"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 dgThreadRegions/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-slicer">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-slicer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-slicer"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-slicer/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-slicer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-slicer/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-pta-dump">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-pta-dump" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-pta-dump"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-pta-dump/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-pta-dump" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-pta-dump/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gitversion">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 gitversion"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-dg-dump">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-dg-dump" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-dg-dump"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-dg-dump/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-dg-dump" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-dg-dump/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-pta-ben">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-pta-ben" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-pta-ben"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-pta-ben/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-pta-ben" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-pta-ben/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-thread-regions-dump">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-thread-regions-dump" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-thread-regions-dump"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-thread-regions-dump/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-thread-regions-dump" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-thread-regions-dump/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dgllvmslicer">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/libdgllvmslicer.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 dgllvmslicer"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dgllvmslicer/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/libdgllvmslicer.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 dgllvmslicer/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-pta-compare">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-pta-compare" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-pta-compare"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-pta-compare/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-pta-compare" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-pta-compare/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-rd-dump">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-rd-dump" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-rd-dump"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-rd-dump/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-rd-dump" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-rd-dump/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-vr-dump">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-vr-dump" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-vr-dump"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-vr-dump/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-vr-dump" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-vr-dump/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-to-source">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-to-source" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-to-source"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-to-source/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-to-source" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-to-source/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-ntscd-dump">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-ntscd-dump" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-ntscd-dump"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-ntscd-dump/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tools/llvm-ntscd-dump" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tools"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/tools/../src"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 llvm-ntscd-dump/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tools/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ptset-benchmark">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/ptset-benchmark" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 ptset-benchmark"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ptset-benchmark/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/ptset-benchmark" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 ptset-benchmark/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rdmap-benchmark">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/rdmap-benchmark" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 rdmap-benchmark"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rdmap-benchmark/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/rdmap-benchmark" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 rdmap-benchmark/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 check"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="adt-test">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/adt-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 adt-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="adt-test/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/adt-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 adt-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="points-to-test">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/points-to-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 points-to-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="points-to-test/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/points-to-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 points-to-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="points-to-set-test">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/points-to-set-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 points-to-set-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="points-to-set-test/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/points-to-set-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 points-to-set-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="disjunctive-interval-map-regressions">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/disjunctive-interval-map-regressions" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDUMP"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 disjunctive-interval-map-regressions"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="disjunctive-interval-map-regressions/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/disjunctive-interval-map-regressions" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDUMP"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 disjunctive-interval-map-regressions/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="data-flow-test">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/data-flow-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 data-flow-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="data-flow-test/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/data-flow-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 data-flow-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-dg-test">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/llvm-dg-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 llvm-dg-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llvm-dg-test/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/llvm-dg-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 llvm-dg-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="reaching-definitions-test">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/reaching-definitions-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 reaching-definitions-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="reaching-definitions-test/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/reaching-definitions-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 reaching-definitions-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dg-test">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/dg-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 dg-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dg-test/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/dg-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 dg-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="numbers-set-test">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/numbers-set-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 numbers-set-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="numbers-set-test/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/numbers-set-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 numbers-set-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bitvector-test">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/bitvector-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 bitvector-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bitvector-test/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/bitvector-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 bitvector-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="disjunctive-intervals-map-test">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/disjunctive-intervals-map-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 disjunctive-intervals-map-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="disjunctive-intervals-map-test/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/disjunctive-intervals-map-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/lib"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 disjunctive-intervals-map-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nodes-walk-test">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/nodes-walk-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 nodes-walk-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nodes-walk-test/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/nodes-walk-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 nodes-walk-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="numbers-set1-regressions">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/numbers-set1-regressions" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 numbers-set1-regressions"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="numbers-set1-regressions/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/numbers-set1-regressions" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 numbers-set1-regressions/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread-regions-test-file">
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 thread-regions-test-file"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread-regions-test">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/thread-regions-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSIMPLE_FILE=&quot;/home/wei/CLionProjects/Features/dg/tests/simple.ll&quot;"/>
+					<Add option="-DPTHREAD_EXIT_FILE=&quot;/home/wei/CLionProjects/Features/dg/tests/pthread_exit.ll&quot;"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 thread-regions-test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="thread-regions-test/fast">
+				<Option output="/home/wei/CLionProjects/Features/dg/tests/thread-regions-test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wei/CLionProjects/Features/dg/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSIMPLE_FILE=&quot;/home/wei/CLionProjects/Features/dg/tests/simple.ll&quot;"/>
+					<Add option="-DPTHREAD_EXIT_FILE=&quot;/home/wei/CLionProjects/Features/dg/tests/pthread_exit.ll&quot;"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DHAVE_LLVM"/>
+					<Add option="-DENABLE_CFG"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include"/>
+					<Add directory="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ThreadRegions"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 thread-regions-test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/wei/CLionProjects/Features/dg/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/ADT/Bits.h">
+			<Option target="DGAnalysis"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/ADT/Bitvector.h">
+			<Option target="DGAnalysis"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/ADT/DGContainer.h">
+			<Option target="DGAnalysis"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/ADT/NumberSet.h">
+			<Option target="DGAnalysis"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/BBlock.h">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/DependenceGraph.h">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/Node.h">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/Offset.h">
+			<Option target="DGAnalysis"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/PointsTo/MemoryObject.h">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/PointsTo/Pointer.h">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/PointsTo/PointerAnalysis.h">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/PointsTo/PointerAnalysisFI.h">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/PointsTo/PointerAnalysisFS.h">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/PointsTo/PointerGraph.h">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/PointsTo/PointerGraphValidator.h">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/PointsTo/PointsToSet.h">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/ReachingDefinitions/RDMap.h">
+			<Option target="RD"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/ReachingDefinitions/RDNode.h">
+			<Option target="RD"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/ReachingDefinitions/ReachingDefinitions.h">
+			<Option target="RD"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/analysis/SubgraphNode.h">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/llvm/LLVMDependenceGraph.h">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/llvm/LLVMDependenceGraphBuilder.h">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/llvm/LLVMNode.h">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/llvm/LLVMSlicer.h">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/PointsTo/LLVMPointerAnalysisOptions.h">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/PointsTo/PointerAnalysis.h">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/PointsTo/PointerGraph.h">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/include/dg/llvm/analysis/ReachingDefinitions/ReachingDefinitions.h">
+			<Option target="LLVMrd"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/analysis/Offset.cpp">
+			<Option target="DGAnalysis"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/Pointer.cpp">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/PointerAnalysis.cpp">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/PointerGraphValidator.cpp">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/PointsToSet.cpp">
+			<Option target="PTA"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/analysis/ReachingDefinitions/BasicRDMap.cpp">
+			<Option target="RD"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/analysis/ReachingDefinitions/ReachingDefinitions.cpp">
+			<Option target="RD"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/LLVMDGVerifier.cpp">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/LLVMDGVerifier.h">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/LLVMDependenceGraph.cpp">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/LLVMNode.cpp">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Block.cpp">
+			<Option target="dgControlDependence"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Block.h">
+			<Option target="dgControlDependence"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Function.cpp">
+			<Option target="dgControlDependence"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Function.h">
+			<Option target="dgControlDependence"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/GraphBuilder.cpp">
+			<Option target="dgControlDependence"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/GraphBuilder.h">
+			<Option target="dgControlDependence"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/NonTerminationSensitiveControlDependencyAnalysis.cpp">
+			<Option target="dgControlDependence"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/NonTerminationSensitiveControlDependencyAnalysis.h">
+			<Option target="dgControlDependence"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/DefUse/DefUse.cpp">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/DefUse/DefUse.h">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/Dominators/PostDominators.cpp">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Block.cpp">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Calls.cpp">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Constants.cpp">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Globals.cpp">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Instructions.cpp">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Interprocedural.cpp">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/PointerGraph.cpp">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/PointerGraphValidator.cpp">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/PointerGraphValidator.h">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Structure.cpp">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/PointsTo/Threads.cpp">
+			<Option target="LLVMpta"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ReachingDefinitions/LLVMRDBuilder.cpp">
+			<Option target="LLVMrd"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ReachingDefinitions/LLVMRDBuilder.h">
+			<Option target="LLVMrd"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ReachingDefinitions/LLVMReachingDefinitions.cpp">
+			<Option target="LLVMrd"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/BlockGraph.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/ControlFlowGraph.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/CriticalSectionsBuilder.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/FunctionGraph.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/GraphBuilder.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/ThreadRegionsBuilder.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/MayHappenInParallel.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/CallFuncPtrNode.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/CallNode.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/CallReturnNode.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/EntryNode.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/ExitNode.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/ForkNode.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/GeneralNode.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/JoinNode.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/LockNode.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/Node.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/NodeIterator.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/ReturnNode.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/UnlockNode.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/ThreadRegion.cpp">
+			<Option target="dgThreadRegions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/llvm-utils.h">
+			<Option target="LLVMdg"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/adt-test.cpp">
+			<Option target="adt-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/bitvector-test.cpp">
+			<Option target="bitvector-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/catch-main.cpp">
+			<Option target="thread-regions-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/data-flow-test.cpp">
+			<Option target="data-flow-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/dg-test.cpp">
+			<Option target="dg-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/disjunctive-interval-map-regressions.cpp">
+			<Option target="disjunctive-interval-map-regressions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/disjunctive-intervals-map-test.cpp">
+			<Option target="disjunctive-intervals-map-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/fuzzing/disjunctive-map1.cpp">
+			<Option target="disjunctive-interval-map-regressions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/fuzzing/numbers-set1.cpp">
+			<Option target="numbers-set1-regressions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/llvm-dg-test.cpp">
+			<Option target="llvm-dg-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/nodes-walk-test.cpp">
+			<Option target="nodes-walk-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/numbers-set-test.cpp">
+			<Option target="numbers-set-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/numbers-set1-regressions.cpp">
+			<Option target="numbers-set1-regressions"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/points-to-set-test.cpp">
+			<Option target="points-to-set-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/points-to-test.cpp">
+			<Option target="points-to-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/ptset-benchmark.cpp">
+			<Option target="ptset-benchmark"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/rdmap-benchmark.cpp">
+			<Option target="rdmap-benchmark"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/reaching-definitions-test.cpp">
+			<Option target="reaching-definitions-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/thread-regions-test.cpp">
+			<Option target="thread-regions-test"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-dg-dump.cpp">
+			<Option target="llvm-dg-dump"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-ntscd-dump.cpp">
+			<Option target="llvm-ntscd-dump"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-pta-ben.cpp">
+			<Option target="llvm-pta-ben"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-pta-compare.cpp">
+			<Option target="llvm-pta-compare"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-pta-dump.cpp">
+			<Option target="llvm-pta-dump"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-rd-dump.cpp">
+			<Option target="llvm-rd-dump"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-slicer-crit.cpp">
+			<Option target="llvm-slicer"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-slicer-opts.cpp">
+			<Option target="dgllvmslicer"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-slicer-opts.h">
+			<Option target="dgllvmslicer"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-slicer-utils.cpp">
+			<Option target="dgllvmslicer"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-slicer-utils.h">
+			<Option target="dgllvmslicer"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-slicer.cpp">
+			<Option target="llvm-slicer"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-slicer.h">
+			<Option target="dgllvmslicer"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-thread-regions-dump.cpp">
+			<Option target="llvm-thread-regions-dump"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-to-source.cpp">
+			<Option target="llvm-to-source"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/llvm-vr-dump.cpp">
+			<Option target="llvm-vr-dump"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/../../../../../usr/local/share/llvm/cmake/AddLLVM.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\llvm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/../../../../../usr/local/share/llvm/cmake/LLVM-Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\llvm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/../../../../../usr/local/share/llvm/cmake/LLVMConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\llvm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/../../../../../usr/local/share/llvm/cmake/LLVMParseArguments.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\llvm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/../../../../../usr/local/share/llvm/cmake/LLVMProcessSources.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\llvm\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\llvm\analysis\ThreadRegions\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/include/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\llvm\analysis\ThreadRegions\include\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\llvm\analysis\ThreadRegions\sources\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Nodes/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\llvm\analysis\ThreadRegions\sources\Nodes\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ThreadRegions/sources/Graphs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\llvm\analysis\ThreadRegions\sources\Graphs\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\llvm\analysis\ControlDependence\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tools/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tools\"/>
+		</Unit>
+		<Unit filename="/home/wei/CLionProjects/Features/dg/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

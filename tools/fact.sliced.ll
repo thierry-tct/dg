@@ -24,7 +24,7 @@ define i32 @main() #0 {
   br i1 %6, label %1, label %7
 
 ; <label>:7                                       ; preds = %4
-  call void @__assert_fail(i8* getelementptr inbounds ([6 x i8]* @.str1, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str2, i32 0, i32 0), i32 18, i8* getelementptr inbounds ([11 x i8]* @__PRETTY_FUNCTION__.main, i32 0, i32 0)) #3
+  call void @__assert_fail(i8* getelementptr inbounds ([6 x i8]* @.str1, i32 0, i32 0), i8* getelementptr inbounds ([7 x i8]* @.str2, i32 0, i32 0), i32 23, i8* getelementptr inbounds ([11 x i8]* @__PRETTY_FUNCTION__.main, i32 0, i32 0)) #3
   unreachable
 
 safe_return:                                      ; preds = %1

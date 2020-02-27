@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/wei/CLionProjects/Features/dg/lib/llvm/LLVMDGVerifier.cpp
+cstdio
+-
+cstdarg
+-
+llvm/IR/Value.h
+-
+llvm/IR/Function.h
+-
+llvm/Support/raw_ostream.h
+-
+dg/llvm/LLVMDependenceGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/dg/llvm/LLVMDependenceGraph.h
+dg/llvm/LLVMNode.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/dg/llvm/LLVMNode.h
+llvm/LLVMDGVerifier.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/llvm/LLVMDGVerifier.h
+
 /home/wei/CLionProjects/Features/dg/lib/llvm/LLVMDependenceGraph.cpp
 utility
 -
@@ -53,6 +71,26 @@ ControlFlowGraph.h
 /home/wei/CLionProjects/Features/dg/lib/llvm/ControlFlowGraph.h
 MayHappenInParallel.h
 /home/wei/CLionProjects/Features/dg/lib/llvm/MayHappenInParallel.h
+
+/home/wei/CLionProjects/Features/dg/lib/llvm/LLVMNode.cpp
+llvm/IR/Instruction.h
+-
+llvm/IR/Instructions.h
+-
+llvm/IR/Value.h
+-
+llvm/IR/Function.h
+-
+llvm/IR/Constants.h
+-
+llvm/IR/GlobalVariable.h
+-
+llvm/Support/raw_ostream.h
+-
+dg/llvm/LLVMNode.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/dg/llvm/LLVMNode.h
+dg/llvm/LLVMDependenceGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/dg/llvm/LLVMDependenceGraph.h
 
 /home/wei/CLionProjects/Features/dg/lib/llvm/analysis/DefUse/DefUse.cpp
 map
@@ -105,6 +143,18 @@ dg/analysis/legacy/DataFlowAnalysis.h
 /home/wei/CLionProjects/Features/dg/lib/llvm/analysis/DefUse/dg/analysis/legacy/DataFlowAnalysis.h
 dg/llvm/analysis/ReachingDefinitions/ReachingDefinitions.h
 /home/wei/CLionProjects/Features/dg/lib/llvm/analysis/DefUse/dg/llvm/analysis/ReachingDefinitions/ReachingDefinitions.h
+
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/Dominators/PostDominators.cpp
+llvm/IR/Function.h
+-
+llvm/Analysis/PostDominators.h
+-
+dg/analysis/BFS.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/Dominators/dg/analysis/BFS.h
+dg/analysis/PostDominanceFrontiers.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/Dominators/dg/analysis/PostDominanceFrontiers.h
+dg/llvm/LLVMDependenceGraph.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/Dominators/dg/llvm/LLVMDependenceGraph.h
 
 /home/wei/CLionProjects/Features/dg/lib/llvm/llvm-utils.h
 llvm/IR/Function.h
@@ -468,6 +518,14 @@ vector
 cassert
 -
 
+include/dg/analysis/PostDominanceFrontiers.h
+vector
+-
+dg/BBlock.h
+include/dg/analysis/dg/BBlock.h
+dg/analysis/legacy/BFS.h
+include/dg/analysis/dg/analysis/legacy/BFS.h
+
 include/dg/analysis/ReachingDefinitions/DefinitionsMap.h
 set
 -
@@ -565,6 +623,12 @@ algorithm
 -
 
 include/dg/analysis/legacy/Analysis.h
+
+include/dg/analysis/legacy/BFS.h
+dg/analysis/legacy/NodesWalk.h
+include/dg/analysis/legacy/dg/analysis/legacy/NodesWalk.h
+dg/ADT/Queue.h
+include/dg/analysis/legacy/dg/ADT/Queue.h
 
 include/dg/analysis/legacy/DFS.h
 dg/analysis/legacy/NodesWalk.h

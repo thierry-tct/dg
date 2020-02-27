@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Block.cpp
+Block.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Block.h
+Function.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Function.h
+sstream
+-
+llvm/Support/raw_ostream.h
+-
+llvm/IR/Instructions.h
+-
+llvm/IR/Function.h
+-
+
 /home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Block.h
 vector
 -
@@ -14,6 +28,16 @@ set
 map
 -
 iosfwd
+-
+
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Function.cpp
+Function.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Function.h
+Block.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Block.h
+ostream
+-
+algorithm
 -
 
 /home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Function.h
@@ -49,6 +73,36 @@ map
 -
 iosfwd
 -
+
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/NonTerminationSensitiveControlDependencyAnalysis.cpp
+NonTerminationSensitiveControlDependencyAnalysis.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/NonTerminationSensitiveControlDependencyAnalysis.h
+Function.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Function.h
+Block.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Block.h
+algorithm
+-
+iostream
+-
+functional
+-
+queue
+-
+unordered_set
+-
+
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/NonTerminationSensitiveControlDependencyAnalysis.h
+GraphBuilder.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/GraphBuilder.h
+set
+-
+map
+-
+unordered_map
+-
+Block.h
+/home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/Block.h
 
 /home/wei/CLionProjects/Features/dg/lib/llvm/analysis/ControlDependence/TarjanAnalysis.h
 vector

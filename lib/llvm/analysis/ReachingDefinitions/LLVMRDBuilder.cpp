@@ -524,7 +524,14 @@ LLVMRDBuilder::getOrCreateSubgraph(const llvm::Function *F) {
     } else {
         subg = &it->second;
     }
-
+    RDNode *root = new RDNode(rd::RDNodeType::NOOP);
+    RDNode *ret = new RDNode(rd::RDNodeType::NOOP);
+    Block * dumpybb = new Block();
+    dumpybb->nodes.push_back(root);
+    if(subg->entry == nullptr){
+        subg->entry = dumpybb;
+        subg->returns.push_back(ret);
+    }
     assert(subg && "No subgraph");
     assert(subg->entry && "No entry in the subgraph");
     assert(subg->entry->nodes.front() && "No first node in the subgraph");
@@ -675,13 +682,13 @@ getBasicBlocksInDominatorOrder(llvm::Function& F)
 
         to_process.swap(new_to_process);
     }
-
     return blocks;
 }
 
 LLVMRDBuilder::Subgraph&
 LLVMRDBuilder::buildFunction(const llvm::Function& F)
 {
+
     // emplace new subgraph to avoid looping with recursive functions
     auto si = subgraphs_map.emplace(&F, Subgraph());
     Subgraph& subg = si.first->second;
@@ -732,6 +739,8 @@ LLVMRDBuilder::buildFunction(const llvm::Function& F)
             subg.returns.push_back(block.nodes.back());
         }
     }
+
+
 
     return subg;
 }

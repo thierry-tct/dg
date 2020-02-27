@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/Pointer.cpp
+dg/analysis/PointsTo/Pointer.h
+/home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/dg/analysis/PointsTo/Pointer.h
+dg/analysis/PointsTo/PSNode.h
+/home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/dg/analysis/PointsTo/PSNode.h
+iostream
+-
+
 /home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/PointerAnalysis.cpp
 dg/analysis/PointsTo/Pointer.h
 /home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/dg/analysis/PointsTo/Pointer.h
@@ -25,6 +33,18 @@ dg/analysis/PointsTo/PointsToSet.h
 /home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/dg/analysis/PointsTo/PointsToSet.h
 dg/analysis/PointsTo/PointerGraphValidator.h
 /home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/dg/analysis/PointsTo/PointerGraphValidator.h
+
+/home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/PointsToSet.cpp
+dg/analysis/PointsTo/PSNode.h
+/home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/dg/analysis/PointsTo/PSNode.h
+dg/analysis/PointsTo/Pointer.h
+/home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/dg/analysis/PointsTo/Pointer.h
+dg/analysis/PointsTo/PointsToSet.h
+/home/wei/CLionProjects/Features/dg/lib/analysis/PointsTo/dg/analysis/PointsTo/PointsToSet.h
+vector
+-
+map
+-
 
 include/dg/ADT/Bitvector.h
 map

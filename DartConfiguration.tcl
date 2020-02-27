@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/home/wei/anaconda3/bin/cmake" "/home/wei/CLionProjects/Features/dg"
+ConfigureCommand: "/home/wei/ide/clion-2019.3/bin/cmake/linux/bin/cmake" "/home/wei/CLionProjects/Features/dg"
 MakeCommand: /home/wei/anaconda3/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

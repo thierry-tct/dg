@@ -72,5 +72,5 @@ bin
 dg.srctrl*
 
 compile_commands.json
-
+CMakeCache.txt
 CMakeLists.txt.user*
