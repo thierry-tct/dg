@@ -4,17 +4,17 @@
 
 #include "test-runner.h"
 #include "test-dg.h"
-#include "analysis/DataFlowAnalysis.h"
+#include "dg/analysis/legacy/DataFlowAnalysis.h"
 
 namespace dg {
 namespace tests {
 
-class DataFlowA : public analysis::DataFlowAnalysis<TestNode>
+class DataFlowA : public analysis::legacy::DataFlowAnalysis<TestNode>
 {
 public:
     DataFlowA(TestBBlock *B,
               bool (*ron)(TestNode *), uint32_t fl = 0)
-        : analysis::DataFlowAnalysis<TestNode>(B, fl),
+        : analysis::legacy::DataFlowAnalysis<TestNode>(B, fl),
           run_on_node(ron) {}
 
     /* virtual */
@@ -70,14 +70,8 @@ public:
 
         // add some parameters
         DGParameters<TestNode> *params = new DGParameters<TestNode>();
-
-        TestNode *ni = new TestNode(nodes_num + 1);
-        TestNode *no = new TestNode(nodes_num + 1);
-        params->add(nodes_num + 1, ni, no);
-
-        ni = new TestNode(nodes_num + 2);
-        no = new TestNode(nodes_num + 2);
-        params->add(nodes_num + 2, ni, no);
+        params->construct(nodes_num + 1, nodes_num + 1);
+        params->construct(nodes_num + 2, nodes_num + 2);
 
         d->getEntry()->setParameters(params);
 
@@ -121,7 +115,7 @@ public:
             d->getNode(i)->counter = 0;
         }
 
-        const analysis::DataFlowStatistics& stats = dfa.getStatistics();
+        const auto& stats = dfa.getStatistics();
         check(stats.getBBlocksNum() == NODES_NUM, "wrong number of blocks: %d",
               stats.getBBlocksNum());
         check(stats.processedBlocks == NODES_NUM,
@@ -138,7 +132,7 @@ public:
                   d->getNode(i)->counter);
         }
 
-        const analysis::DataFlowStatistics& stats2 = dfa2.getStatistics();
+        const auto& stats2 = dfa2.getStatistics();
         check(stats2.getBBlocksNum() == NODES_NUM, "wrong number of blocks: %d",
               stats2.getBBlocksNum());
         check(stats2.processedBlocks == 2*NODES_NUM,
@@ -192,7 +186,7 @@ public:
 
         // this did not go into the procedures, so we should have only
         // the parent graph
-        const analysis::DataFlowStatistics& stats = dfa.getStatistics();
+        const auto& stats = dfa.getStatistics();
         check(stats.getBBlocksNum() == NODES_NUM, "wrong number of blocks: %d",
               stats.getBBlocksNum());
         check(stats.processedBlocks == NODES_NUM,
@@ -201,7 +195,8 @@ public:
               stats.getIterationsNum());
 
         DataFlowA dfa2(d->getEntryBB(), one_change,
-                       analysis::DATAFLOW_INTERPROCEDURAL | analysis::DATAFLOW_BB_NO_CALLSITES);
+                       analysis::legacy::DATAFLOW_INTERPROCEDURAL |
+                       analysis::legacy::DATAFLOW_BB_NO_CALLSITES);
         dfa2.run();
 
         for (int i = 0; i < NODES_NUM; ++i) {
@@ -237,7 +232,7 @@ public:
         // same size + the blocks in parent graph
         // we don't go through the parameters!
         uint64_t blocks_num = (NODES_NUM + 1) * NODES_NUM;
-        const analysis::DataFlowStatistics& stats2 = dfa2.getStatistics();
+        const auto& stats2 = dfa2.getStatistics();
         check(stats2.getBBlocksNum() == blocks_num, "wrong number of blocks: %d",
               stats2.getBBlocksNum());
         check(stats2.processedBlocks == 2*blocks_num,
@@ -248,7 +243,7 @@ public:
         // BBlocks now keep call-sites information, so now
         // this should work too
         DataFlowA dfa3(d->getEntryBB(), one_change,
-                       analysis::DATAFLOW_INTERPROCEDURAL);
+                       analysis::legacy::DATAFLOW_INTERPROCEDURAL);
         dfa3.run();
 
         for (int i = 0; i < NODES_NUM; ++i) {
@@ -282,7 +277,7 @@ public:
 
         // we have NODES_NUM nodes and each node has subgraph of the
         // same size + the blocks in parent graph
-        const analysis::DataFlowStatistics& stats3 = dfa3.getStatistics();
+        const auto& stats3 = dfa3.getStatistics();
         check(stats3.getBBlocksNum() == blocks_num, "wrong number of blocks: %d",
               stats3.getBBlocksNum());
         check(stats3.processedBlocks == 2*blocks_num,

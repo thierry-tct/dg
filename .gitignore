@@ -29,7 +29,6 @@
 
 # cmake
 *.cmake
-*CMake*
 *Makefile*
 
 # swp files
@@ -50,7 +49,6 @@ tags
 
 # LLVM files
 *.bc
-*.ll
 *.sliced
 
 *.i
@@ -66,3 +64,13 @@ tools/llvm-to-source
 tools/llvm-slicer
 
 git-version.h
+
+#build directory
+build
+bin
+#sourcetrail files
+dg.srctrl*
+
+compile_commands.json
+CMakeCache.txt
+CMakeLists.txt.user*

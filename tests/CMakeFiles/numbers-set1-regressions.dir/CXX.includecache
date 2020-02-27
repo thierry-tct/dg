@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wei/CLionProjects/Features/dg/tests/fuzzing/numbers-set1.cpp
+set
+-
+cassert
+-
+cstdint
+-
+dg/ADT/NumberSet.h
+/home/wei/CLionProjects/Features/dg/tests/fuzzing/dg/ADT/NumberSet.h
+
+/home/wei/CLionProjects/Features/dg/tests/numbers-set1-regressions.cpp
+fstream
+-
+iterator
+-
+string
+-
+vector
+-
+
+include/dg/ADT/Bits.h
+cstddef
+-
+cassert
+-
+
+include/dg/ADT/Bitvector.h
+map
+-
+cassert
+-
+
+include/dg/ADT/NumberSet.h
+Bits.h
+include/dg/ADT/Bits.h
+Bitvector.h
+include/dg/ADT/Bitvector.h
+

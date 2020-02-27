@@ -3,8 +3,6 @@ project(dg)
 
 include(CTest)
 
-include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/src )
-
 # we need C++11 standard
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED on)
@@ -49,12 +47,12 @@ if (LLVM_DG)
 	  message(STATUS "Looking for headers in: ${LLVM_INCLUDE_DIRS}")
 	endif()
 
-	# if we were provided a path to custom build directory
-	# use that
+       # if we were provided a path to custom build directory
+       # use that
 	if (LLVM_BUILD_PATH)
 	  link_directories(${LLVM_BUILD_PATH}/lib)
 
-	  # llvm-config.h
+         # llvm-config.h
 	  include_directories("${LLVM_BUILD_PATH}/include")
 	  message(STATUS "Looking for libraries in given: ${LLVM_BUILD_PATH}/lib")
 	else()
@@ -63,16 +61,25 @@ if (LLVM_DG)
 	endif(LLVM_BUILD_PATH)
 
 	add_definitions(${LLVM_DEFINITIONS})
-
-	if (NOT ${LLVM_PACKAGE_VERSION} VERSION_LESS "3.5")
-		llvm_map_components_to_libnames(llvm_libs support core
-		                                irreader bitwriter analysis)
-	else()
-		llvm_map_components_to_libraries(llvm_libs support core
-		                                 irreader bitwriter analysis)
-	endif()
-
 	add_definitions(-DHAVE_LLVM)
+        
+       if (${LLVM_PACKAGE_VERSION} VERSION_GREATER "3.5")
+          llvm_map_components_to_libnames(llvm_core core)
+          llvm_map_components_to_libnames(llvm_irreader irreader)
+          llvm_map_components_to_libnames(llvm_bitwriter bitwriter)
+          llvm_map_components_to_libnames(llvm_analysis analysis)
+          llvm_map_components_to_libnames(llvm_support support)
+       else()	       
+          llvm_map_components_to_libraries(llvm_transformutils transformutils)
+	  llvm_map_components_to_libraries(llvm_ipo ipo)
+	  llvm_map_components_to_libraries(llvm_asmparser asmparser)
+	  llvm_map_components_to_libraries(llvm_core core)
+	  llvm_map_components_to_libraries(llvm_core core)
+	  llvm_map_components_to_libraries(llvm_irreader irreader)
+	  llvm_map_components_to_libraries(llvm_bitwriter bitwriter)
+	  llvm_map_components_to_libraries(llvm_analysis analysis)
+	  llvm_map_components_to_libraries(llvm_support support)
+       endif()	  
 endif(LLVM_DG)
 
 if (ENABLE_CFG)
@@ -80,6 +87,21 @@ if (ENABLE_CFG)
 endif()
 
 message(STATUS "Using compiler: ${CMAKE_CXX_COMPILER}")
+
+
+# Our CI does not work with fuzzing tests yet, make it optional by hand
+option(TESTING_ENABLE_FUZZING "Enable fuzzing tests" off)
+if (TESING_ENABLE_FUZZING)
+	message(STATUS "Going to build fuzzing tests")
+endif()
+#if (${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
+	# FIXME: we should check for the version of clang
+	# or rather just whether -fsanitize=fuzzer works
+	#option(TESTING_ENABLE_FUZZING "Enable fuzzing tests" on)
+	#message(STATUS "Will build fuzzing tests")
+#else()
+#	message(STATUS "Will NOT build fuzzing tests")
+#endif()
 
 # explicitly add -std=c++11 and -fno-rtti
 # we have CMAKE_CXX_STANDARD, but for some reason it does not
@@ -89,7 +111,13 @@ message(STATUS "Using compiler: ${CMAKE_CXX_COMPILER}")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-rtti -std=c++11 -Wall -Wextra")
 
 if (USE_CLANG_SANITIZERS)
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=undefined -fsanitize=address")
+	message(WARNING "USE_CLANG_SANITIZERS has been renamed to USE_SANITIZERS")
+	set(USE_SANITIZERS on)
+endif()
+
+if (USE_SANITIZERS)
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=undefined,address")
+	add_definitions(-DUSING_SANITIZERS)
 endif()
 
 # Debug Release RelWithDebInfo MinSizeRel.
@@ -111,6 +139,8 @@ include(GNUInstallDirs)
 message(STATUS "CMAKE_INSTALL_LIBDIR: \"${CMAKE_INSTALL_LIBDIR}\"")
 message(STATUS "CMAKE_INSTALL_INCLUDEDIR: \"${CMAKE_INSTALL_INCLUDEDIR}\"")
 
-add_subdirectory(src)
-add_subdirectory(tests EXCLUDE_FROM_ALL)
+add_subdirectory(lib)
 add_subdirectory(tools)
+add_subdirectory(tests EXCLUDE_FROM_ALL)
+install(DIRECTORY include/
+	DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})

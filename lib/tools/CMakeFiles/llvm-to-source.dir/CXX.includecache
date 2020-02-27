@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wei/Downloads/dg/tools/llvm-to-source.cpp
+set
+-
+iostream
+-
+fstream
+-
+sstream
+-
+limits
+-
+map
+-
+stack
+-
+llvm/Config/llvm-config.h
+-
+llvm/DebugInfo.h
+-
+llvm/DebugInfo/DIContext.h
+-
+llvm/IR/LLVMContext.h
+-
+llvm/IR/Module.h
+-
+llvm/Support/SourceMgr.h
+-
+llvm/Support/raw_os_ostream.h
+-
+llvm/IRReader/IRReader.h
+-
+

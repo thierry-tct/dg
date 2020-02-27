@@ -1,0 +1,1 @@
+/usr/bin/c++   -fno-rtti -std=c++11 -Wall -Wextra -g  -rdynamic CMakeFiles/disjunctive-intervals-map-test.dir/disjunctive-intervals-map-test.cpp.o  -o disjunctive-intervals-map-test  -L/usr/local/lib -Wl,-rpath,/usr/local/lib:/home/wei/CLionProjects/Features/dg/lib ../lib/libDGAnalysis.so 

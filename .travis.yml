@@ -1,34 +1,48 @@
 language: cpp
+sudo: true
 
-# use Ubuntu 14.04
 dist: trusty
 
-compiler:
-  - clang
-  - gcc
+git:
+  depth: 1
 
 addons:
- apt:
-  sources:
-   - llvm-toolchain-precise-3.8
-   - ubuntu-toolchain-r-test
-  packages:
-   - libllvm3.8
-   - libllvm3.8-dbg
-   - llvm-3.8
-   - llvm-3.8-dev
-   - llvm-3.8-runtime
-   - gcc-4.8
-   - g++-4.8
-   - clang
-   - cmake
+  apt:
+    sources:
+      # newer gcc and clang
+      - ubuntu-toolchain-r-test
+      - sourceline: 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-4.0 main'
+        key_url: 'https://apt.llvm.org/llvm-snapshot.gpg.key'
+      - sourceline: 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-5.0 main'
+    packages:
+      - libz-dev
 
+env:
+    - LLVM=3.8
+    - LLVM=4.0
+    - LLVM=5.0
 
-before_script:
-  - mkdir build
-  - cd build
-  - cmake .. -DLLVM_DIR=/usr/local/share/llvm-3.4/cmake
+compiler:
+    - 'clang++'
+    - 'g++'
+    - 'g++-5'
+
+install:
+  - git clone --depth 1 https://github.com/tomsik68/travis-llvm.git
+  - cd travis-llvm
+  - chmod +x travis-llvm.sh
+  - ./travis-llvm.sh ${LLVM}
+  - cd ..
 
 script:
+  # gcc in the versions that we use has problems with sanitizers
+  - if test "$CXX" = "clang++"; then export CXX_FLAGS="-fsanitize=undefined,address"; fi
+  - cmake -DCMAKE_BUILD_TYPE="$BUILD_TYPE" -DCMAKE_CXX_FLAGS=$CXX_FLAGS .
+  - make -j2
+  - cd tests
   - make
-  - make test
+  # for now turn off the detection of leaks, we're working on it
+  - ASAN_OPTIONS=detect_leaks=0 make check
+
+notifications:
+    email: false

@@ -4,10 +4,12 @@
 
 #include "test-runner.h"
 
-#include "ADT/Queue.h"
-#include "analysis/ReachingDefinitions/RDMap.h"
+#include "dg/ADT/Queue.h"
+#include "dg/ADT/Bitvector.h"
+#include "dg/analysis/ReachingDefinitions/RDMap.h"
 
 using namespace dg::ADT;
+using dg::analysis::Offset;
 
 namespace dg {
 namespace tests {
@@ -111,34 +113,42 @@ public:
         using namespace analysis::rd;
 
         check(intervalsDisjunctive(0, 1, 2, 20), "BUG: intervals should be disjunctive");
-        check(!intervalsDisjunctive(0, 1, 1, 2), "BUG: intervals should not be disjunctive");
+        check(intervalsDisjunctive(0, 1, 1, 2), "BUG: intervals should be disjunctive");
         check(!intervalsDisjunctive(1, 1, 1, 2), "BUG: intervals should not be disjunctive");
         check(!intervalsDisjunctive(1, 1, 1, 1), "BUG: intervals should not be disjunctive");
         check(!intervalsDisjunctive(3, 5, 3, 5), "BUG: intervals should not be disjunctive");
         check(!intervalsDisjunctive(3, 7, 3, 5), "BUG: intervals should not be disjunctive");
         check(!intervalsDisjunctive(3, 5, 3, 7), "BUG: intervals should not be disjunctive");
         check(intervalsDisjunctive(1, 1, 2, 2), "BUG: intervals should be disjunctive");
+        check(!intervalsDisjunctive(0, 4, 2, 2), "BUG: intervals should not be disjunctive");
+
+        check(!intervalsDisjunctive(0, 4, 2, Offset::UNKNOWN),
+                                    "BUG: intervals should not be disjunctive");
+        check(intervalsDisjunctive(0, 4, 4, Offset::UNKNOWN),
+                                   "BUG: intervals should be disjunctive");
+        check(!intervalsDisjunctive(0, Offset::UNKNOWN, 4, Offset::UNKNOWN),
+                                    "BUG: intervals should not be disjunctive");
+        check(!intervalsDisjunctive(0, Offset::UNKNOWN, 1, 4),
+                                    "BUG: intervals should not be disjunctive");
 
         check(!intervalsOverlap(0, 1, 2, 20), "BUG: intervals should be disjunctive");
-        check(intervalsOverlap(0, 1, 1, 2), "BUG: intervals should overlap");
+        check(!intervalsOverlap(0, 1, 1, 2), "BUG: intervals should not overlap");
         check(intervalsOverlap(1, 1, 1, 2), "BUG: intervals should overlap");
         check(intervalsOverlap(1, 1, 1, 1), "BUG: intervals should overlap");
         check(intervalsOverlap(3, 5, 3, 5), "BUG: intervals should overlap");
         check(intervalsOverlap(3, 7, 3, 5), "BUG: intervals should overlap");
         check(intervalsOverlap(3, 5, 3, 7), "BUG: intervals should overlap");
         check(!intervalsOverlap(1, 1, 2, 2), "BUG: intervals should be disjunctive");
-        check(intervalsOverlap(1, 2, 0, 1), "BUG: intervals should overlap");
+        check(!intervalsOverlap(1, 2, 0, 1), "BUG: intervals should not overlap");
         check(intervalsOverlap(1, 2, 1, 1), "BUG: intervals should overlap");
         check(intervalsOverlap(1, 2, 1, 2), "BUG: intervals should overlap");
         check(intervalsOverlap(1, 2, 2, 2), "BUG: intervals should overlap");
         check(intervalsOverlap(2, 2, 2, 2), "BUG: intervals should overlap");
-        check(!intervalsOverlap(3, 3, 2, 2), "BUG: intervals should not overlap");
+        check(intervalsOverlap(3, 3, 2, 2), "BUG: intervals should overlap");
         check(!intervalsOverlap(1, 2, 3, 3), "BUG: intervals should not overlap");
         check(!intervalsOverlap(1, 2, 3, 3), "BUG: intervals should not overlap");
     }
 };
-
-
 
 }; // namespace tests
 }; // namespace dg

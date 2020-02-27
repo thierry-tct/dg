@@ -43,7 +43,7 @@ compile()
 	BCFILE="$2"
 
 	clang -emit-llvm -c -include "$TESTS_DIR/test_assert.h"\
-		$TESTS_CFLAGS -Wall -Wextra "$CODE" -o "$BCFILE" \
+		$DG_TESTS_CFLAGS -Wall -Wextra "$CODE" -o "$BCFILE" \
 		|| errmsg "Compilation failed"
 
 	if [ "x$DG_TESTS_OPTIMIZE" != "x" ]; then
@@ -60,9 +60,12 @@ link_with_assert()
 {
 	FILE="$1"
 	OUT="$2"
+	shift
+	shift
+
 	TEST_ASSERT="$TESTS_DIR/test_assert.bc"
 
-	clang -emit-llvm -c "$TESTS_DIR/test_assert.c" -o "$TEST_ASSERT" \
+	clang -emit-llvm -c "$TESTS_DIR/test_assert.c" -o "$TEST_ASSERT" $@ \
 		|| errmsg "Compilation of test_assert.c failed"
 	llvm-link "$FILE" "$TEST_ASSERT" -o "$OUT" \
 		|| errmsg "Linking with test_assert failed"
@@ -80,6 +83,29 @@ get_result()
 	echo "$OUTPUT" | grep -q 'Assertion PASSED' || { echo "$OUTPUT"; errmsg "Assertion did not pass"; }
 
 	echo "$OUTPUT"
+}
+
+slice()
+{
+	BCFILE="$1"
+	OUTPUT="$2"
+
+	# slice the code
+	if [ ! -z "$DG_TESTS_PTA" ]; then
+		export DG_TESTS_PTA="-pta $DG_TESTS_PTA"
+	fi
+
+	if [ ! -z "$DG_TESTS_RDA" ]; then
+		export DG_TESTS_RDA="-rda $DG_TESTS_RDA"
+	fi
+
+	if [ ! -z "$DG_TESTS_CDA" ]; then
+		export DG_TESTS_CDA="-cd-alg $DG_TESTS_CDA"
+	fi
+
+	llvm-slicer $DG_TESTS_PARAMS $DG_TESTS_CDA\
+	            $DG_TESTS_RDA $DG_TESTS_PTA $DG_TESTS_SLICER_FLAGS\
+		     -c test_assert "$BCFILE" -o "$OUTPUT"
 }
 
 run_test()
@@ -100,12 +126,7 @@ run_test()
 	# compile in.c out.bc
 	compile "$CODE" "$BCFILE"
 
-	# slice the code
-	if [ ! -z "$DG_TESTS_PTA" ]; then
-		export DG_TESTS_PTA="-pta $DG_TESTS_PTA"
-	fi
-
-	llvm-slicer $DG_TESTS_PTA -c test_assert "$BCFILE"
+	slice "$BCFILE" "$SLICEDFILE"
 
 	# link assert to the code
 	link_with_assert "$SLICEDFILE" "$LINKEDFILE"

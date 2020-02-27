@@ -1,0 +1,1 @@
+/usr/bin/c++   -fno-rtti -std=c++11 -Wall -Wextra -g  -rdynamic CMakeFiles/nodes-walk-test.dir/nodes-walk-test.cpp.o  -o nodes-walk-test  -L/usr/local/lib 
