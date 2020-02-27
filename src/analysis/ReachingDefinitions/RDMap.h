@@ -26,12 +26,8 @@ intervalsDisjunctive(uint64_t a1, uint64_t a2,
 {
     // XXX: does this work if a2 or b2 is UNKNOWN_OFFSET??
     // think it through
-    // TODO  Commented the 2 assertions because they cause a bug on 
-    // CoreBench - coreutils 'du' program
-    // old version of DG didn't have this asserts
-    // probably a bug in DG is related to that 
-    //assert(a1 <= a2);
-    //assert(b1 <= b2);
+    assert(a1 <= a2);
+    assert(b1 <= b2);
     return ((a1 <= b1) ? (a2 < b1) : (b2 < a1));
 }
 

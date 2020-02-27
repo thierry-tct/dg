@@ -455,7 +455,6 @@ static bool isRelevantIntrinsic(const llvm::Function *func)
     using namespace llvm;
 
     switch (func->getIntrinsicID()) {
-        case Intrinsic::vacopy:
         case Intrinsic::memmove:
         case Intrinsic::memcpy:
         case Intrinsic::vastart:
@@ -696,7 +695,6 @@ PSNode *LLVMPointerSubgraphBuilder::createMemTransfer(const llvm::IntrinsicInst 
     const Value *dest, *src;//, *lenVal;
 
     switch (I->getIntrinsicID()) {
-        case Intrinsic::vacopy:
         case Intrinsic::memmove:
         case Intrinsic::memcpy:
             dest = I->getOperand(0);
@@ -780,7 +778,7 @@ LLVMPointerSubgraphBuilder::createIntrinsic(const llvm::Instruction *Inst)
     PSNode *n;
 
     const IntrinsicInst *I = cast<IntrinsicInst>(Inst);
-    if (isa<MemTransferInst>(I) || isa<VACopyInst>(I)) {
+    if (isa<MemTransferInst>(I)) {
         n = createMemTransfer(I);
         return std::make_pair(n, n);
     } else if (isa<MemSetInst>(I)) {
