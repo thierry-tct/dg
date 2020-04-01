@@ -281,7 +281,7 @@ RDNode *LLVMRDBuilder::getOperand(const llvm::Value *val)
             }
         }
         if (!op) {
-             op = create(RDNodeType::RETURN);
+             op = create(RDNodeType::NOOP);
 	     llvm::errs() << "[RD] error: cannot find an operand: " << *val << "\n";
         }
     }
